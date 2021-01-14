@@ -1,0 +1,7 @@
+.Header .header-tabs {
+  font-size: 2rem;
+  color: white;
+}
+.Header .spacer {
+  flex-grow: 1;
+}
