@@ -1,3 +1,3 @@
-# Static Site
+# Lux AI Challenge Website
 
-Code for static site
+Temporary link: https://lux-ai.netlify.app
