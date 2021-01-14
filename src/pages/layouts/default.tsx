@@ -13,11 +13,15 @@ let outerTheme = createMuiTheme({
   palette: {
     primary: {
       main: '#00AFBD',
-      contrastText: '#fff',
+      contrastText: '#000',
+    },
+    secondary: {
+      main: '#F5A500',
+      contrastText: '#000',
     },
     text: {
       primary: '#F9EFE2',
-      secondary: '#fff',
+      secondary: '#000',
     },
   },
   typography: {

@@ -11,6 +11,7 @@ import {
   makeStyles,
   responsiveFontSizes,
   Theme,
+  Link,
   ThemeProvider,
   Typography,
 } from '@material-ui/core';
@@ -118,13 +119,53 @@ const HomePage = () => {
             <Typography variant="body1">{t('sec1.body1')}</Typography>
             <Typography variant="body1">{t('sec1.body2')}</Typography>
             <Typography variant="body1">{t('sec1.body3')}</Typography>
-            <Typography variant="body1">{t('sec1.body4')}</Typography>
+            <Typography variant="body1">
+              {t('sec1.body4')}{' '}
+              <Link href="https://halite.io/" target="blank" color="secondary">
+                Halite
+              </Link>
+              ,{' '}
+              <Link
+                href="https://terminal.c1games.com/"
+                target="blank"
+                color="secondary"
+              >
+                Terminal
+              </Link>
+              ,{' '}
+              <Link
+                href="https://battlecode.org/"
+                target="blank"
+                color="secondary"
+              >
+                Battlecode
+              </Link>
+              ,{' '}
+              <Link
+                href="http://ants.aichallenge.org/"
+                target="blank"
+                color="secondary"
+              >
+                AI Challenge
+              </Link>
+            </Typography>
           </section>
           <section>
             <Typography variant="h4">{t('details.title')}</Typography>
             <Typography variant="body1">{t('details.body1')}</Typography>
             <Typography variant="body1">{t('details.body2')}</Typography>
             <Typography variant="body1">{t('details.body3')}</Typography>
+            <Typography variant="body1">
+              Discord:{' '}
+              <Link
+                href="https://discord.gg/DZSm47VHMz"
+                color="secondary"
+                target="blank"
+              >
+                https://discord.gg/DZSm47VHMz
+              </Link>{' '}
+              - {t('details.disc')}
+            </Typography>
             <Typography variant="body1">{t('details.body4')}</Typography>
             <Typography variant="body1">{t('details.body5')}</Typography>
             <Typography variant="body1" style={{ marginBottom: 0 }}>
