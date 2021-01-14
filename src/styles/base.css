@@ -12,6 +12,12 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #F9EFE2;
 }
 
 code {

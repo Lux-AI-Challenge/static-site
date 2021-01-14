@@ -3,8 +3,32 @@
     "About Us": "About Us",
     "Contact": "Contact"
   },
-  "about": {
-    "About Us": "关于",
-    "Contact": "联系"
+  "Home": {
+    "Sign Up": "Sign Up",
+    "Login": "Login",
+    "subtitle": "A novel approach to AI Programming Challenges",
+    "title":"Welcome To Lux.",
+    "sec1": {
+      "title": "What is the Lux AI Challenge?",
+      "body1": "Lux is an AI programming game competition.",
+      "body2": "Teams are given the Lux design specification. Starting off with a very basic player, teams will improve and upload new submissions to the scrimmage server where they will face off against other teams and receive sweet, sweet rating internet points. Details of the game will be released on the first day of the competition Jun 14, 2021.",
+      "body3": "Generally, the competition involves a multi-variable optimization and resource gathering and allocation problem. Successful submissions will not only involve solving this optimization, but also responding to the opposite team. (Think simplified starcraft)",
+      "body4": "Each team starts with a very basic bot programmed to make random moves. You and your team will make improvements to combat, navigation, resource gathering and more to incrementally increase the power of your bot. See: halite, terminal, battlecode and ai programming challenge."
+    },
+    "details": {
+      "title": "Competition Details",
+      "body1": "Team size: 1-4 people",
+      "body2": "Schedule: Lux AI season one will begin on June 14, 2021 and run for several weeks.",
+      "body3": "Eligibility: Anyone is welcome to participate!",
+      "body4": "Location: Virtual/twitch/youtube!",
+      "body5": "Languages: All major, PRs welcomed for any language",
+      "tschedule": {
+        "1": "Tournament Schedule:",
+        "2": "Sprint Tournament 1 - ",
+        "3": "Midpoint Tournament - ",
+        "4": "Finals - "
+      }
+      
+    }
   }
 }

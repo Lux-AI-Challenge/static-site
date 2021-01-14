@@ -50,14 +50,14 @@ const Header = () => {
               <Button>{t('About Us')}</Button>
             </Link>
             <Link to="#contact">
-              <Button>Contact</Button>
+              <Button>{t('Contact')}</Button>
             </Link>
             <Button
               aria-controls="simple-menu"
               aria-haspopup="true"
               onClick={handleClick}
             >
-              {language}
+              {language.toUpperCase()}
             </Button>
             <Menu
               id="simple-menu"

@@ -1,0 +1,77 @@
+.HomePage {
+  background-color: #00AFBD;
+}
+.HomePage .container .tourney-list {
+  margin: 0;
+}
+.HomePage .container .tourney-list li p {
+  margin: 0;
+}
+.HomePage .container p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.HomePage .container {
+  padding: 2rem;
+  /* background-color: #00AFBD; */
+  position: relative;
+  z-index: 4;
+}
+.HomePage .backdrop {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  left: calc(15% - 6rem);
+}
+.HomePage .backdrop-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: calc(100% + 12rem);
+  position: absolute;
+  top: calc(-6rem + 15%);
+  
+}
+.HomePage .splash .splash-text {
+  z-index: 3;
+  position: relative;
+  top: 15%;
+  left: calc(15% - 12rem);
+  width: 48rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.HomePage .splash .splash-text h3 {
+  font-weight: 700;
+}
+
+.HomePage .splash {
+  height: 90vh;
+  z-index: 1;
+}
+@media only screen and (max-width: 1000px) {
+  .HomePage .backdrop {
+    left: calc(50% - 940px);
+    top: 12rem;
+  }
+  .HomePage .splash {
+    width: 100%;
+  }
+  .HomePage .splash .splash-text {
+    width: 100%;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .HomePage .backdrop {
+    left: calc(50% - 880px);
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .HomePage .backdrop {
+    left: calc(50% - 790px);
+    transform: scale(0.5);
+  }
+}

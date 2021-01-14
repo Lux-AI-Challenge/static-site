@@ -13,6 +13,7 @@ let outerTheme = createMuiTheme({
   palette: {
     primary: {
       main: '#00AFBD',
+      contrastText: '#fff',
     },
     text: {
       primary: '#F9EFE2',
@@ -35,7 +36,7 @@ const DefaultLayout = ({ children }: LayoutProps) => {
     <div className="DefaultLayout">
       <ThemeProvider theme={outerTheme}>
         <Header />
-        {children}
+        <div className="container">{children}</div>
       </ThemeProvider>
     </div>
   );
