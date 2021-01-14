@@ -1,2 +1,3 @@
-# static-site
-Splash Page
+# Static Site
+
+Code for static site
