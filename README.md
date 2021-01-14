@@ -1,3 +1,3 @@
-# Static Site
+# Lux AI Challenge Website
 
-Temporary link: lux-ai.netlify.app
+Temporary link: https://lux-ai.netlify.app
