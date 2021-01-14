@@ -1,3 +1,3 @@
 # Static Site
 
-Code for static site
+Temporary link: lux-ai.netlify.app
