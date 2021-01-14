@@ -14,6 +14,7 @@ i18n
   .init({
     resources,
     // debug: true,
+    fallbackLng: "en",
 
     // keySeparator: false, // we do not use keys in form messages.welcome
 
