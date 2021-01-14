@@ -1,6 +1,6 @@
 import DefaultLayout from '../layouts/default';
 import Planet from './planet.svg';
-import FacebookSVG from './facebook.svg';
+// import FacebookSVG from './facebook.svg';
 import GoogleSVG from './google.svg';
 import GithubSVG from './github.svg';
 import './index.css';
@@ -141,9 +141,6 @@ const HomePage = () => {
                 );
               })}
             </ul>
-            <Typography variant="body1">{t('details.body7')}</Typography>
-            <Typography variant="body1">{t('details.body8')}</Typography>
-            <Typography variant="body1">{t('details.body9')}</Typography>
           </section>
         </main>
       </div>

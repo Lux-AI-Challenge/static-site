@@ -13,7 +13,7 @@
 }
 .HomePage .container {
   padding: 2rem;
-  /* background-color: #00AFBD; */
+  padding-bottom: 8rem;
   position: relative;
   z-index: 4;
 }
