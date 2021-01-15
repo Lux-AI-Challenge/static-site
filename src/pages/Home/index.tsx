@@ -1,5 +1,6 @@
 import DefaultLayout from '../layouts/default';
 import Planet from './planet.svg';
+import Planet2 from './planet2.svg';
 // import FacebookSVG from './facebook.svg';
 import GoogleSVG from './google.svg';
 import GithubSVG from './github.svg';
@@ -16,24 +17,6 @@ import {
   Typography,
 } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    socialsGroup: {
-      marginTop: '1.5rem',
-    },
-    buttonGroup: {
-      marginTop: '1.5rem',
-    },
-    signupBtn: {
-      borderRadius: '1.5rem',
-      marginBottom: '1rem',
-    },
-    loginBtn: {
-      borderRadius: '1.5rem',
-      textTransform: 'none',
-    },
-  })
-);
 let theme = createMuiTheme({
   palette: {
     primary: {
@@ -55,14 +38,44 @@ let theme = createMuiTheme({
 });
 theme = responsiveFontSizes(theme);
 const HomePage = () => {
+  const night = new Date().getHours() > 16;
+  const useStyles = makeStyles((theme: Theme) => {
+    return createStyles({
+      homePage: {
+        backgroundColor: '#00AFBD',
+      },
+      splash: {
+        backgroundColor: night ? '#2C2E33' : '#00AFBD',
+      },
+      socialsGroup: {
+        marginTop: '1.5rem',
+      },
+      buttonGroup: {
+        marginTop: '1.5rem',
+      },
+      signupBtn: {
+        borderRadius: '1.5rem',
+        marginBottom: '1rem',
+      },
+      loginBtn: {
+        borderRadius: '1.5rem',
+        textTransform: 'none',
+      },
+    });
+  });
   const { t } = useTranslation(['Home']);
   const classes = useStyles();
+
   return (
     <DefaultLayout>
-      <div className="HomePage">
-        <div className="splash">
+      <div className={`${classes.homePage} HomePage`}>
+        <div className={`splash ${classes.splash}`}>
           <div className="backdrop-wrapper">
-            <img src={Planet} className="backdrop" alt="backdrop" />
+            {night ? (
+              <img src={Planet2} className={`backdrop`} alt="backdrop" />
+            ) : (
+              <img src={Planet} className={`backdrop`} alt="backdrop" />
+            )}
           </div>
           <div className="splash-text">
             <Typography variant="h3" color="textPrimary">

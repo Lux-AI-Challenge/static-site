@@ -1,5 +1,6 @@
 .HomePage {
   background-color: #00AFBD;
+  transition: all 0.2s;
 }
 .HomePage .container .tourney-list {
   margin: 0;
@@ -48,6 +49,7 @@
 .HomePage .splash {
   height: 90vh;
   z-index: 1;
+  transition: all 0.2s;
 }
 @media only screen and (max-width: 1000px) {
   .HomePage .backdrop {
