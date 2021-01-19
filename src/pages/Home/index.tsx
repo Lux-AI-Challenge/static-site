@@ -2,7 +2,8 @@ import DefaultLayout from '../layouts/default';
 import Planet from './planet.svg';
 import Planet2 from './planet2.svg';
 // import FacebookSVG from './facebook.svg';
-import GoogleSVG from './google.svg';
+// import GoogleSVG from './google.svg';
+import DiscordSVG from './discord.svg';
 import GithubSVG from './github.svg';
 import './index.css';
 import {
@@ -113,7 +114,7 @@ const HomePage = () => {
             </ThemeProvider>
             <div className={classes.socialsGroup}>
               {[
-                { svg: GoogleSVG, link: 'https://github.com/Lux-AI-Challenge' },
+                { svg: DiscordSVG, link: 'https://discord.gg/DZSm47VHMz' },
                 { svg: GithubSVG, link: 'https://github.com/Lux-AI-Challenge' },
               ].map(({ svg, link }) => {
                 return (

@@ -2,8 +2,8 @@
   z-index: 10;
   position: relative;
 }
-.Header .header-tabs {
-
+.Header .header-tabs button {
+  margin-right: 1rem;
 }
 .Header .spacer {
   flex-grow: 1;
