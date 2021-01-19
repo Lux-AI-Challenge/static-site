@@ -38,7 +38,8 @@ let theme = createMuiTheme({
 });
 theme = responsiveFontSizes(theme);
 const HomePage = () => {
-  const night = new Date().getHours() > 16;
+  // const night = new Date().getHours() > 16;
+  const night = false;
   const useStyles = makeStyles((theme: Theme) => {
     return createStyles({
       homePage: {
@@ -127,7 +128,7 @@ const HomePage = () => {
           </div>
         </div>
         <main className="container">
-          <section>
+          <section id="about">
             <Typography variant="h4">{t('sec1.title')}</Typography>
             <Typography variant="body1">{t('sec1.body1')}</Typography>
             <Typography variant="body1">{t('sec1.body2')}</Typography>
@@ -195,6 +196,22 @@ const HomePage = () => {
                 );
               })}
             </ul>
+            <Typography variant="body1">{t('details.body6')}</Typography>
+          </section>
+          <section id="contact">
+            <Typography variant="h4">{t('contact.title')}</Typography>
+            <Typography variant="body1">
+              {t('contact.body1-1')}{' '}
+              <Link
+                href="https://discord.gg/DZSm47VHMz"
+                color="secondary"
+                target="blank"
+              >
+                https://discord.gg/DZSm47VHMz
+              </Link>{' '}
+              {t('contact.body1-2')}
+            </Typography>
+            <Typography variant="body1">{t('contact.body2')}</Typography>
           </section>
         </main>
       </div>

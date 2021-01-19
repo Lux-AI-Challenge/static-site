@@ -9,7 +9,8 @@ import {
   MenuItem,
 } from '@material-ui/core';
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
 import './index.css';
 import LanguageContext from 'LanguageContext';
@@ -46,12 +47,12 @@ const Header = () => {
         <Toolbar>
           <div className="spacer"></div>
           <div className="header-tabs">
-            <Link to="#about">
+            <HashLink to="#about">
               <Button>{t('About Us')}</Button>
-            </Link>
-            <Link to="#contact">
+            </HashLink>
+            <HashLink to="#contact">
               <Button>{t('Contact')}</Button>
-            </Link>
+            </HashLink>
             <Button
               aria-controls="simple-menu"
               aria-haspopup="true"

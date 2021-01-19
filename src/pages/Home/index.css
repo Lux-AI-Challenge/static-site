@@ -2,6 +2,9 @@
   background-color: #00AFBD;
   transition: all 0.2s;
 }
+.HomePage .container h4 {
+  margin-top: 2rem;
+}
 .HomePage .container .tourney-list {
   margin: 0;
 }

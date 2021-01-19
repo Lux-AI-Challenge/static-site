@@ -18,6 +18,7 @@ time, mark, audio, video {
 body {
   margin: 0;
   color: #F9EFE2;
+  scroll-behavior: smooth;
 }
 
 code {
