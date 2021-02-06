@@ -6,7 +6,7 @@
   "Home": {
     "Sign Up": "Sign Up",
     "Login": "Login",
-    "subtitle": "A novel approach to AI Programming Challenges",
+    "subtitle": "A novel approach to AI Programming Challenges. Season 1 starting June 14, 2021",
     "title":"Welcome To Lux.",
     "sec1": {
       "title": "What is the Lux AI Challenge?",
@@ -37,6 +37,15 @@
       "body1-1": "Our discord at",
       "body1-2": "is our primary means of communication, just ping anyone with the @Admin role! Otherwise feel free to reach out to us at luxaichallenge@gmail.com",
       "body2": ""
+    },
+    "signup": {
+      "title": "Sign Up",
+      "body1": "Sign up to be the first to hear about important announcements regarding Lux AI such as the specifications release for season 1 and updates to the competition"
     }
+  },
+  "SignupForm": {
+    "email": "Email",
+    "name": "Name",
+    "github": "Github"
   }
 }

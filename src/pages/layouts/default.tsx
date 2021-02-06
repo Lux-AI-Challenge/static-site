@@ -6,22 +6,19 @@ import {
 import Header from 'components/Header';
 import './default.css';
 type LayoutProps = {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 };
 
 let outerTheme = createMuiTheme({
   palette: {
     primary: {
       main: '#00AFBD',
-      contrastText: '#000',
     },
     secondary: {
       main: '#F5A500',
-      contrastText: '#000',
     },
     text: {
       primary: '#F9EFE2',
-      secondary: '#000',
     },
   },
   typography: {

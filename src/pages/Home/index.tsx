@@ -1,4 +1,5 @@
 import DefaultLayout from '../layouts/default';
+import SignupForm from '../../components/SignupForm';
 import Planet from './planet.svg';
 import Planet2 from './planet2.svg';
 // import FacebookSVG from './facebook.svg';
@@ -6,6 +7,7 @@ import Planet2 from './planet2.svg';
 import DiscordSVG from './discord.svg';
 import GithubSVG from './github.svg';
 import './index.css';
+import { HashLink } from 'react-router-hash-link';
 import {
   Button,
   createMuiTheme,
@@ -93,22 +95,24 @@ const HomePage = () => {
             <ThemeProvider theme={theme}>
               <div className={classes.buttonGroup}>
                 <div>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.signupBtn}
-                  >
-                    {t('Sign Up')}
-                  </Button>
+                  <HashLink to="#signup">
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.signupBtn}
+                    >
+                      {t('Sign Up')}
+                    </Button>
+                  </HashLink>
                 </div>
                 <div>
-                  <Button
+                  {/* <Button
                     variant="contained"
                     color="secondary"
                     className={classes.loginBtn}
                   >
                     {t('Login')}
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </ThemeProvider>
@@ -118,7 +122,7 @@ const HomePage = () => {
                 { svg: GithubSVG, link: 'https://github.com/Lux-AI-Challenge' },
               ].map(({ svg, link }) => {
                 return (
-                  <a href={link} target="blank">
+                  <a href={link} target="blank" key={link}>
                     <Button>
                       <img src={svg} alt="social-logo" />
                     </Button>
@@ -189,7 +193,7 @@ const HomePage = () => {
             <ul className="tourney-list">
               {[2, 3, 4].map((i) => {
                 return (
-                  <li>
+                  <li key={i}>
                     <Typography variant="body1">
                       {t('details.tschedule.' + i)}
                     </Typography>
@@ -213,6 +217,11 @@ const HomePage = () => {
               {t('contact.body1-2')}
             </Typography>
             <Typography variant="body1">{t('contact.body2')}</Typography>
+          </section>
+          <section id="signup">
+            <Typography variant="h4">{t('signup.title')}</Typography>
+            <Typography variant="body1">{t('signup.body1')}</Typography>
+            <SignupForm />
           </section>
         </main>
       </div>
