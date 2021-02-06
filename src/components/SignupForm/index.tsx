@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   TextField,
   Card,
@@ -9,11 +10,15 @@ import {
   createMuiTheme,
   responsiveFontSizes,
   ThemeProvider,
+  Snackbar,
 } from '@material-ui/core';
-import { FormEvent } from 'react';
+import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
+import { FormEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-// https://us-central1-lux-ai-test.cloudfunctions.net/mailchimp-signup?email=stonezt2019@gmail.com&firstName=stone2&lastName=tao&github=abcdef
 
+const Alert = (props: AlertProps) => {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+};
 let theme = createMuiTheme({
   palette: {
     primary: {
@@ -24,15 +29,6 @@ let theme = createMuiTheme({
     },
     text: {
       primary: '#000',
-    },
-  },
-  typography: {
-    button: {
-      fontSize: 18,
-      width: '16rem',
-
-      color: 'inherit',
-      textTransform: 'none',
     },
   },
 });
@@ -54,9 +50,9 @@ const SignupForm = () => {
       text: {
         color: 'black',
         width: '100%',
+        marginBottom: '1rem',
       },
       submit: {
-        marginTop: '1rem',
         width: '100%',
       },
     });
@@ -73,13 +69,59 @@ const SignupForm = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: f,
+        body: JSON.stringify(Object.fromEntries(f)),
+        redirect: 'follow',
       }
-    );
+    )
+      .then((res) => {
+        if (res.ok) {
+          return { ...res.json(), ok: true };
+        }
+        return res.json();
+      })
+      .then((res) => {
+        if (res.ok) {
+          notify('Succesfully signed up, check your inbox!');
+        } else {
+          // this should be done server side later
+          if (
+            JSON.parse(JSON.parse(res.error).response.text).title ===
+            'Member Exists'
+          ) {
+            notify('Already signed up!');
+          } else {
+            notify('An error ocurred');
+          }
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   };
+
+  const [openNotif, setOpenNotif] = useState(false);
+  const [notifMessage, setNotifMessage] = useState('');
+  const notify = (msg: string) => {
+    setNotifMessage(msg);
+    setOpenNotif(true);
+  };
+  const handleClose = () => {
+    setOpenNotif(false);
+  };
+
   return (
     <div className={classes.cardWrapper}>
       <ThemeProvider theme={theme}>
+        <Snackbar
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+          open={openNotif}
+          onClose={handleClose}
+          autoHideDuration={6000}
+        >
+          <Alert onClose={handleClose} severity="info">
+            {notifMessage}
+          </Alert>
+        </Snackbar>
         <Card className={classes.card}>
           <Typography>Please provide the following: </Typography>
           <form onSubmit={handleSubmit}>
@@ -93,7 +135,7 @@ const SignupForm = () => {
             <TextField
               className={classes.text}
               color="primary"
-              name="name"
+              name="firstName"
               label={t('name')}
               required
             />
