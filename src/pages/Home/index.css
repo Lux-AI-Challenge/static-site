@@ -2,6 +2,9 @@
   background-color: #00AFBD;
   transition: all 0.2s;
 }
+.HomePage a { 
+  color: #F5C500;
+}
 .HomePage .container h4 {
   margin-top: 2rem;
 }
