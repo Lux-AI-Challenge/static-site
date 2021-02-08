@@ -1,46 +1,46 @@
 import {
   AppBar,
   Button,
-  createStyles,
-  makeStyles,
-  Theme,
+  // createStyles,
+  // makeStyles,
+  // Theme,
   Toolbar,
-  Menu,
-  MenuItem,
+  // Menu,
+  // MenuItem,
 } from '@material-ui/core';
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
 import './index.css';
-import LanguageContext from 'LanguageContext';
-import { Language } from 'languageconsts';
+// import LanguageContext from 'LanguageContext';
+// import { Language } from 'languageconsts';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    langBtn: {
-      color: 'rgba(0,0,0,0.87)',
-    },
-  })
-);
+// const useStyles = makeStyles((theme: Theme) =>
+//   createStyles({
+//     langBtn: {
+//       color: 'rgba(0,0,0,0.87)',
+//     },
+//   })
+// );
 
 const Header = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const { t } = useTranslation(['Header']);
-  const { setLanguage, language } = React.useContext(LanguageContext);
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-  const handleLanguageTabClose = (lang: Language) => {
-    return () => {
-      setLanguage(lang);
-      setAnchorEl(null);
-    };
-  };
+  // const { setLanguage, language } = React.useContext(LanguageContext);
+  // const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  // const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+  // const handleClose = () => {
+  //   setAnchorEl(null);
+  // };
+  // const handleLanguageTabClose = (lang: Language) => {
+  //   return () => {
+  //     setLanguage(lang);
+  //     setAnchorEl(null);
+  //   };
+  // };
   return (
     <div className="Header">
       <AppBar position="static">
@@ -53,14 +53,14 @@ const Header = () => {
             <HashLink to="#contact">
               <Button>{t('Contact')}</Button>
             </HashLink>
-            <Button
+            {/* <Button
               aria-controls="simple-menu"
               aria-haspopup="true"
               onClick={handleClick}
             >
               {language.toUpperCase()}
-            </Button>
-            <Menu
+            </Button> */}
+            {/* <Menu
               id="simple-menu"
               anchorEl={anchorEl}
               keepMounted
@@ -79,7 +79,7 @@ const Header = () => {
               >
                 Chinese
               </MenuItem>
-            </Menu>
+            </Menu> */}
           </div>
         </Toolbar>
       </AppBar>

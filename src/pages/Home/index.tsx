@@ -168,6 +168,7 @@ const HomePage = () => {
                 AI Challenge
               </Link>
             </Typography>
+            <Typography variant="body1">{t('sec1.body5')}</Typography>
           </section>
           <section>
             <Typography variant="h4">{t('details.title')}</Typography>
@@ -187,6 +188,7 @@ const HomePage = () => {
             </Typography>
             <Typography variant="body1">{t('details.body4')}</Typography>
             <Typography variant="body1">{t('details.body5')}</Typography>
+            <Typography variant="body1">{t('details.body6')}</Typography>
             <Typography variant="body1" style={{ marginBottom: 0 }}>
               {t('details.tschedule.1')}
             </Typography>
@@ -201,7 +203,7 @@ const HomePage = () => {
                 );
               })}
             </ul>
-            <Typography variant="body1">{t('details.body6')}</Typography>
+            <Typography variant="body1">{t('details.body7')}</Typography>
           </section>
           <section id="contact">
             <Typography variant="h4">{t('contact.title')}</Typography>

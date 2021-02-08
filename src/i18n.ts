@@ -2,10 +2,10 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import en from 'locales/en.json';
-import zh from 'locales/zh.json';
+// import zh from 'locales/zh.json';
 const resources = {
   en: en,
-  zh: zh
+  // zh: zh
 };
 
 i18n
@@ -14,7 +14,7 @@ i18n
   .init({
     resources,
     // debug: true,
-    fallbackLng: "en",
+    fallbackLng: 'en',
 
     // keySeparator: false, // we do not use keys in form messages.welcome
 

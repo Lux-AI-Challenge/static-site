@@ -69,14 +69,14 @@
 }
 @media only screen and (max-width: 650px) {
   .HomePage .backdrop {
-    left: calc(50% - 880px);
+    left: calc(50% - 940px);
     transform: scale(0.8);
   }
 }
 
 @media only screen and (max-width: 520px) {
   .HomePage .backdrop {
-    left: calc(50% - 790px);
+    left: calc(50% - 920px);
     transform: scale(0.5);
   }
 }
