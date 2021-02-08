@@ -193,7 +193,7 @@ const HomePage = () => {
               {t('details.tschedule.1')}
             </Typography>
             <ul className="tourney-list">
-              {[2, 3, 4].map((i) => {
+              {[2, 3].map((i) => {
                 return (
                   <li key={i}>
                     <Typography variant="body1">
