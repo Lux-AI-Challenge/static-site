@@ -6,42 +6,49 @@
   "Home": {
     "Sign Up": "Sign Up",
     "Login": "Login",
-    "subtitle": "A novel approach to AI Programming Challenges. Season 1 starting June 14, 2021",
-    "title":"Welcome To Lux.",
+    "subtitle": "A novel approach to AI Programming Challenges. Season 1 starting Late June, 2021",
+    "title": "Welcome To Lux.",
     "sec1": {
       "title": "What is the Lux AI Challenge?",
       "body1": "Lux is an AI programming game competition.",
-      "body2": "Teams are given the Lux design specification. Starting off with a very basic player, teams will improve and upload new submissions to the scrimmage server where they will face off against other teams and receive sweet, sweet rating internet points. Details of the exact game design will be released on the first day of the competition June 14, 2021.",
+      "body2": "Teams are given the Lux design specification. Starting off with a very basic player, teams will improve and upload new submissions to the scrimmage server where they will face off against other teams and receive sweet, sweet rating internet points. Details of the exact game design will be released on the first day of the competition.",
       "body3": "Generally, the competition involves a multi-variable optimization and resource gathering and allocation problem in a 1v1 scenario against competitor bots. Successful submissions will not only involve solving this optimization, but also responding to the opposite team and coming out on top. (Think simplified starcraft)",
       "body4": "Each team starts with a very basic bot programmed to make random moves. You and your team will have to make improvements to unit navigation, resource gathering, macro and micro strategies and more to incrementally increase the power of your bot. See the other competitions for examples: ",
-      "body5": "We are heavily focused on user-centered designs that work to bring wide ranging complexity but maintain accessibility for our competitors"
+      "body5": "We are heavily focused on user-centered designs that work to bring wide ranging complexity but maintain accessibility for our competitors. We're also focused on creating competitions that require creativity and out-of-the-box thinking."
     },
     "details": {
       "title": "Competition Details",
       "body1": "Team size: 1-4 people",
-      "body2": "Schedule: Lux AI season one will begin on June 14, 2021 and run for at least a month, this may be extended.",
+      "body2": "Schedule: Lux AI season one will begin in Late June, 2021 and run for at least a month, this may be extended.",
       "body3": "Eligibility: Anyone is welcome to participate!",
       "disc": "Join our discord for up to date announcements, discussion, and chat with other competitors",
       "body4": "Location: Virtual/Twitch/Youtube!",
-      "body5": "Programming Languages: All major languages are supported, PRs are welcomed for other languages!",
+      "body5": "Programming Languages: Python, Javascript, Go, Java will be officially supported. More are TBD. PRs are welcomed for other languages!",
       "body6": "Tournament Format: We will run a ranked leaderboard. Your submission will compete against similarly ranked submissions to determine new rankings",
       "tschedule": {
-        "1": "Tournament Schedule:",
+        "1": "Tournament Schedule (TBD):",
         "2": "Sprint Tournament - The first tournament will run 2 weeks into the competition, competitors can compete for smaller prizes and also analyze and learn from other competitors and develop new strategies and metas",
         "3": "Finals - The final tournament will be run after submissions are closed where competitors compete for the main prize pool."
       },
       "body7": "Any further questions can be answered in our discord!"
-      
     },
     "contact": {
       "title": "Contact",
       "body1-1": "Our discord at",
-      "body1-2": "is our primary means of communication, just ping anyone with the @Admin role! Otherwise feel free to reach out to us at luxaichallenge@gmail.com",
+      "body1-2": "is our primary means of communication, just ping anyone with the @Admin role! Otherwise feel free to reach out to us at hello@lux-ai.org",
       "body2": ""
     },
     "signup": {
       "title": "Sign Up",
       "body1": "Sign up to be the first to hear about important announcements regarding Lux AI such as the specifications release for season 1 and updates to the competition. We hope to see you there!"
+    },
+    "partner": {
+      "title": "Partnerships",
+      "body1": "To be announced!"
+    },
+    "sponsor": {
+      "title": "Sponsors",
+      "body1": "We are actively looking for sponsors! If you are interested in working with us, or recruiting from the world's top talent in problem solving, analysis, AI and more, feel free to reach out to us at sponsorship@lux-ai.org"
     }
   },
   "SignupForm": {

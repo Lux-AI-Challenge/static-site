@@ -53,6 +53,12 @@ const Header = () => {
             <HashLink to="#contact">
               <Button>{t('Contact')}</Button>
             </HashLink>
+            <HashLink to="#partners">
+              <Button>{t('Partners')}</Button>
+            </HashLink>
+            <HashLink to="#sponsor">
+              <Button>{t('Sponsors')}</Button>
+            </HashLink>
             {/* <Button
               aria-controls="simple-menu"
               aria-haspopup="true"

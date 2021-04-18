@@ -220,6 +220,14 @@ const HomePage = () => {
             </Typography>
             <Typography variant="body1">{t('contact.body2')}</Typography>
           </section>
+          <section id="partners">
+            <Typography variant="h4">{t('partner.title')}</Typography>
+            <Typography variant="body1">{t('partner.body1')}</Typography>
+          </section>
+          <section id="sponsor">
+            <Typography variant="h4">{t('sponsor.title')}</Typography>
+            <Typography variant="body1">{t('sponsor.body1')}</Typography>
+          </section>
           <section id="signup">
             <Typography variant="h4">{t('signup.title')}</Typography>
             <Typography variant="body1">{t('signup.body1')}</Typography>
