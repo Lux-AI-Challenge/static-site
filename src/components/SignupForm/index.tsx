@@ -139,12 +139,12 @@ const SignupForm = () => {
               label={t('name')}
               required
             />
-            <TextField
+            {/* <TextField
               className={classes.text}
               name="github"
               label={t('github')}
               color="primary"
-            />
+            /> */}
             <Button className={classes.submit} type="submit" color="primary">
               Sign Up
             </Button>

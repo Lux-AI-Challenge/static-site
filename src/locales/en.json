@@ -6,7 +6,7 @@
   "Home": {
     "Sign Up": "Sign Up",
     "Login": "Login",
-    "subtitle": "A novel approach to AI Programming Challenges. Season 1 starting late June, 2021",
+    "subtitle": "A novel approach to AI Programming Challenges.",
     "title": "Welcome To Lux.",
     "sec1": {
       "title": "What is the Lux AI Challenge?",
@@ -18,12 +18,12 @@
     },
     "details": {
       "title": "Competition Details",
-      "body1": "Team size: 1-4 people",
-      "body2": "Schedule: Lux AI season one will begin in late June, 2021 and run for at least a month, this may be extended.",
+      "body1": "Team size: 1-5 people",
+      "body2": "Schedule: Lux AI Season One will have a pre-release on June 30th, 6PM EST. The ranked leaderboard will be online later run for at least a month, this may be extended.",
       "body3": "Eligibility: Anyone is welcome to participate!",
       "disc": "Join our discord for up to date announcements, discussion, and chat with other competitors",
       "body4": "Location: Virtual/Twitch/Youtube!",
-      "body5": "Programming Languages: Python, Javascript, Go, Java will be officially supported. More are TBD. PRs are welcomed for other languages!",
+      "body5": "Programming Languages: Python, Javascript, C++, Go, Java will be officially supported. More are TBD. PRs are welcomed for other languages!",
       "body6": "Tournament Format: We will run a ranked leaderboard. Your submission will compete against similarly ranked submissions to determine new rankings",
       "tschedule": {
         "1": "Tournament Schedule (TBD):",
