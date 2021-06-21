@@ -18,22 +18,28 @@
     },
     "details": {
       "title": "Competition Details",
-      "body1": "Team size: 1-5 people",
-      "body2": "Schedule: Lux AI Season One will have a pre-release on June 30th, 6PM EST. The ranked leaderboard will be online at a later date and will run for at least a month, this may be extended.",
-      "body3": "Eligibility: Anyone is welcome to participate!",
-      "disc": "Join our discord for up to date announcements, discussion, and chat with other competitors",
-      "body4": "Location: Virtual/Twitch/Youtube!",
-      "body5": "Programming Languages: Python, Javascript, C++, Go, Java will be officially supported. More are TBD. PRs are welcomed for other languages!",
-      "body6": "Tournament Format: We will run a ranked leaderboard. Your submission will compete against similarly ranked submissions to determine new rankings",
-      "tschedule": {
-        "1": "Tournament Schedule (TBD):",
-        "2": "Sprint Tournament - The first tournament will run 2 weeks into the competition, competitors can compete for smaller prizes and also analyze and learn from other competitors and develop new strategies and metas",
-        "3": "Finals - The final tournament will be run after submissions are closed where competitors compete for the main prize pool."
-      },
-      "body7": "Any further questions can be answered in our discord!"
+      "title1": "Time",
+      "body1": "Lux AI season one will be pre-released on June 30, 2021 6PM EST. The ranked leaderboard will be online at a later date and run for at least a month (this may be extended).",
+      "title2": "Location",
+      "body2": "Virtual/Twitch/Youtube",
+      "title3": "Tournament Format",
+      "body3": "We will run a ranked leaderboard. Your submission will compete against similarly ranked submissions to determine new rankings",
+      "title4": "Team size",
+      "body4": "1~5 people",
+      "title5": "Programming Languages",
+      "body5": "Python, Javascript, C++, Java will be officially supported. More are TBD. PRs are welcomed for other languages!",
+      "title6": "Eligibility",
+      "body6": "Anyone is eligible to compete! As long as you submit code you will be considered a participant!"
+    },
+    "tournament-schedule": {
+      "title": "Tournament Schedule",
+      "title1": "Sprint Tournament",
+      "body1": "The first tournament will run 3 weeks into the competition, competitors can compete for smaller prizes and also analyze and learn from other competitors and develop new strategies and metas.",
+      "title2": "Final",
+      "body2": "The final tournament will be run after submissions are closed where competitors compete for the main prize pool."
     },
     "contact": {
-      "title": "Contact",
+      "title": "Contact Us",
       "body1-1": "Our discord at",
       "body1-2": "is our primary means of communication, just ping anyone with the @Admin role! Otherwise feel free to reach out to us at hello@lux-ai.org",
       "body2": ""

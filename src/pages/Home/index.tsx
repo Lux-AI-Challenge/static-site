@@ -51,9 +51,9 @@ const HomePage = () => {
       splash: {
         backgroundColor: night ? '#2C2E33' : '#00AFBD',
       },
-      socialsGroup: {
-        marginTop: '1.5rem',
-      },
+      // socialsGroup: {
+      //   marginTop: '1.5rem',
+      // },
       buttonGroup: {
         marginTop: '1.5rem',
       },
@@ -116,7 +116,7 @@ const HomePage = () => {
                 </div>
               </div>
             </ThemeProvider>
-            <div className={classes.socialsGroup}>
+            <div className="socials">
               {[
                 { svg: DiscordSVG, link: 'https://discord.gg/DZSm47VHMz' },
                 { svg: GithubSVG, link: 'https://github.com/Lux-AI-Challenge' },
@@ -172,10 +172,13 @@ const HomePage = () => {
           </section>
           <section>
             <Typography variant="h4">{t('details.title')}</Typography>
+            <Typography variant="h6">{t('details.title1')}</Typography>
             <Typography variant="body1">{t('details.body1')}</Typography>
+            <Typography variant="h6">{t('details.title2')}</Typography>
             <Typography variant="body1">{t('details.body2')}</Typography>
+            <Typography variant="h6">{t('details.title3')}</Typography>
             <Typography variant="body1">{t('details.body3')}</Typography>
-            <Typography variant="body1">
+            {/* <Typography variant="body1">
               Discord:{' '}
               <Link
                 href="https://discord.gg/DZSm47VHMz"
@@ -185,25 +188,30 @@ const HomePage = () => {
                 https://discord.gg/DZSm47VHMz
               </Link>{' '}
               - {t('details.disc')}
-            </Typography>
+            </Typography> */}
+            <Typography variant="h6">{t('details.title4')}</Typography>
             <Typography variant="body1">{t('details.body4')}</Typography>
+            <Typography variant="h6">{t('details.title5')}</Typography>
             <Typography variant="body1">{t('details.body5')}</Typography>
+            <Typography variant="h6">{t('details.title6')}</Typography>
             <Typography variant="body1">{t('details.body6')}</Typography>
-            <Typography variant="body1" style={{ marginBottom: 0 }}>
-              {t('details.tschedule.1')}
+          </section>
+          <section id="tournament-schedule">
+            <Typography variant="h4">
+              {t('tournament-schedule.title')}
             </Typography>
-            <ul className="tourney-list">
-              {[2, 3].map((i) => {
-                return (
-                  <li key={i}>
-                    <Typography variant="body1">
-                      {t('details.tschedule.' + i)}
-                    </Typography>
-                  </li>
-                );
-              })}
-            </ul>
-            <Typography variant="body1">{t('details.body7')}</Typography>
+            <Typography variant="h6">
+              {t('tournament-schedule.title1')}
+            </Typography>
+            <Typography variant="body1">
+              {t('tournament-schedule.body1')}
+            </Typography>
+            <Typography variant="h6">
+              {t('tournament-schedule.title2')}
+            </Typography>
+            <Typography variant="body1">
+              {t('tournament-schedule.body2')}
+            </Typography>
           </section>
           <section id="contact">
             <Typography variant="h4">{t('contact.title')}</Typography>

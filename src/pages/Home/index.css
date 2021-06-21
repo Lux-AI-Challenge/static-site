@@ -1,12 +1,17 @@
 .HomePage {
-  background-color: #00AFBD;
+  background-color: #00afbd;
   transition: all 0.2s;
 }
-.HomePage a { 
-  color: #F5C500;
+.HomePage a {
+  color: #f5c500;
 }
 .HomePage .container h4 {
   margin-top: 2rem;
+  font-weight: 600;
+}
+.HomePage .container h6 {
+  margin-top: 1rem;
+  font-weight: 600;
 }
 .HomePage .container .tourney-list {
   margin: 0;
@@ -15,7 +20,7 @@
   margin: 0;
 }
 .HomePage .container p {
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
 }
 .HomePage .container {
@@ -28,21 +33,23 @@
   position: absolute;
   top: 0px;
   z-index: 2;
-  left: calc(15% - 6rem);
+  left: 0;
+  width: 100%;
 }
 .HomePage .backdrop-wrapper {
   overflow: hidden;
   width: 100%;
-  height: calc(100% + 12rem);
+  height: calc(100% + 10rem);
   position: absolute;
-  top: calc(-6rem + 15%);
-  
+  top: 0rem;
+  /* top: -2rem; */
 }
 .HomePage .splash .splash-text {
   z-index: 3;
-  position: relative;
-  top: 15%;
+  position: absolute;
+  top: calc(25vw - 6rem);
   left: calc(15% - 12rem);
+  /* left: 5%; */
   width: 48rem;
   text-align: center;
   padding: 4rem;
@@ -51,35 +58,54 @@
 .HomePage .splash .splash-text h3 {
   font-weight: 700;
 }
+.HomePage .splash .socials {
+  margin-top: 1.5rem;
+}
 
 .HomePage .splash {
   height: 90vh;
   z-index: 1;
+  position: relative;
+  overflow-x: hidden;
   transition: all 0.2s;
 }
 @media only screen and (max-width: 1000px) {
+  .HomePage .backdrop-wrapper {
+    position: relative;
+  }
   .HomePage .backdrop {
-    left: calc(50% - 940px);
-    top: 12rem;
+    /* right: calc(-50% + 260px); */
+    right: -200px;
+    left: auto;
+    width: calc(100% + 200px);
+
+    /* top: 24rem;
+    width: 100%; */
+  }
+  /* .HomePage .splash {
+    width: 100%;
+  }
+*/
+}
+@media only screen and (max-width: 650px) {
+}
+
+@media only screen and (max-width: 630px) {
+  .HomePage .backdrop {
+    /* right: calc(-50% - 146px); */
+    right: auto;
+    width: 100%;
+    position: relative;
   }
   .HomePage .splash {
-    width: 100%;
+    height: auto;
+    overflow: hidden;
   }
   .HomePage .splash .splash-text {
     width: 100%;
     left: 0;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .HomePage .backdrop {
-    left: calc(50% - 940px);
-    transform: scale(0.8);
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .HomePage .backdrop {
-    left: calc(50% - 920px);
-    transform: scale(0.5);
+    top: 0rem;
+    padding: 0.5rem;
+    position: relative;
   }
 }
