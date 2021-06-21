@@ -40,9 +40,8 @@
     },
     "contact": {
       "title": "Contact Us",
-      "body1-1": "Our discord at",
-      "body1-2": "is our primary means of communication, just ping anyone with the @Admin role! Otherwise feel free to reach out to us at hello@lux-ai.org",
-      "body2": ""
+      "body1": "Got more questions?",
+      "body2": "Join our Discord for up-to-date announcements, Q&A, and discussion, or email us at hello@lux-ai.org"
     },
     "signup": {
       "title": "Sign Up",

@@ -5,6 +5,11 @@ import Planet2 from './planet2.svg';
 // import FacebookSVG from './facebook.svg';
 // import GoogleSVG from './google.svg';
 import DiscordSVG from './discord.svg';
+import EmailSVG from './email.svg';
+import DiscordCircleSVG from './discord-circ.svg';
+import VideoSVG from './video.svg';
+import CityInfoSVG from './cityinfo.svg';
+import ContactWorkersSVG from './workers.svg';
 import GithubSVG from './github.svg';
 import './index.css';
 import { HashLink } from 'react-router-hash-link';
@@ -46,7 +51,7 @@ const HomePage = () => {
   const useStyles = makeStyles((theme: Theme) => {
     return createStyles({
       homePage: {
-        backgroundColor: '#00AFBD',
+        // backgroundColor: '#00AFBD',
       },
       splash: {
         backgroundColor: night ? '#2C2E33' : '#00AFBD',
@@ -122,7 +127,7 @@ const HomePage = () => {
                 { svg: GithubSVG, link: 'https://github.com/Lux-AI-Challenge' },
               ].map(({ svg, link }) => {
                 return (
-                  <a href={link} target="blank" key={link}>
+                  <a href={link} target="_blank" rel="noreferrer" key={link}>
                     <Button>
                       <img src={svg} alt="social-logo" />
                     </Button>
@@ -132,6 +137,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        <div className="gradient"></div>
         <main className="container">
           <section id="about">
             <Typography variant="h4">{t('sec1.title')}</Typography>
@@ -140,13 +146,19 @@ const HomePage = () => {
             <Typography variant="body1">{t('sec1.body3')}</Typography>
             <Typography variant="body1">
               {t('sec1.body4')}{' '}
-              <Link href="https://halite.io/" target="blank" color="secondary">
+              <Link
+                href="https://halite.io/"
+                target="_blank"
+                rel="noreferrer"
+                color="secondary"
+              >
                 Halite
               </Link>
               ,{' '}
               <Link
                 href="https://terminal.c1games.com/"
-                target="blank"
+                target="_blank"
+                rel="noreferrer"
                 color="secondary"
               >
                 Terminal
@@ -154,7 +166,8 @@ const HomePage = () => {
               ,{' '}
               <Link
                 href="https://battlecode.org/"
-                target="blank"
+                target="_blank"
+                rel="noreferrer"
                 color="secondary"
               >
                 Battlecode
@@ -162,7 +175,8 @@ const HomePage = () => {
               ,{' '}
               <Link
                 href="http://ants.aichallenge.org/"
-                target="blank"
+                target="_blank"
+                rel="noreferrer"
                 color="secondary"
               >
                 AI Challenge
@@ -178,6 +192,9 @@ const HomePage = () => {
             <Typography variant="body1">{t('details.body2')}</Typography>
             <Typography variant="h6">{t('details.title3')}</Typography>
             <Typography variant="body1">{t('details.body3')}</Typography>
+            <div className="video-art-wrapper">
+              <img src={VideoSVG} className={`video-art`} alt="art" />
+            </div>
             {/* <Typography variant="body1">
               Discord:{' '}
               <Link
@@ -196,6 +213,10 @@ const HomePage = () => {
             <Typography variant="h6">{t('details.title6')}</Typography>
             <Typography variant="body1">{t('details.body6')}</Typography>
           </section>
+          <br />
+          <div className="video-art-wrapper">
+            <img src={CityInfoSVG} className={`video-art`} alt="art" />
+          </div>
           <section id="tournament-schedule">
             <Typography variant="h4">
               {t('tournament-schedule.title')}
@@ -213,21 +234,6 @@ const HomePage = () => {
               {t('tournament-schedule.body2')}
             </Typography>
           </section>
-          <section id="contact">
-            <Typography variant="h4">{t('contact.title')}</Typography>
-            <Typography variant="body1">
-              {t('contact.body1-1')}{' '}
-              <Link
-                href="https://discord.gg/DZSm47VHMz"
-                color="secondary"
-                target="blank"
-              >
-                https://discord.gg/DZSm47VHMz
-              </Link>{' '}
-              {t('contact.body1-2')}
-            </Typography>
-            <Typography variant="body1">{t('contact.body2')}</Typography>
-          </section>
           <section id="partners">
             <Typography variant="h4">{t('partner.title')}</Typography>
             <Typography variant="body1">{t('partner.body1')}</Typography>
@@ -240,6 +246,46 @@ const HomePage = () => {
             <Typography variant="h4">{t('signup.title')}</Typography>
             <Typography variant="body1">{t('signup.body1')}</Typography>
             <SignupForm />
+          </section>
+          <div className="contact-art-wrapper">
+            <img src={ContactWorkersSVG} className={`contact-art`} alt="art" />
+          </div>
+          <section id="contact">
+            <Typography variant="h4">{t('contact.title')}</Typography>
+            {/* <Typography variant="body1">
+              {t('contact.body1-1')}{' '}
+              <Link
+                href="https://discord.gg/DZSm47VHMz"
+                color="secondary"
+                target="blank"
+              >
+                https://discord.gg/DZSm47VHMz
+              </Link>{' '}
+              {t('contact.body1-2')}
+            </Typography> */}
+            {/* #F9EFE2 */}
+            <Typography variant="body1">{t('contact.body1')}</Typography>
+            <Typography variant="body1">{t('contact.body2')}</Typography>
+            <div className="contact-footer">
+              <a
+                href="https://discord.gg/DZSm47VHMz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>
+                  <img src={DiscordCircleSVG} className="logo" alt="logo" />
+                </Button>
+              </a>
+              <a
+                href="mailto:hello@lux-ai.org"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>
+                  <img src={EmailSVG} className="logo" alt="logo" />
+                </Button>
+              </a>
+            </div>
           </section>
         </main>
       </div>
