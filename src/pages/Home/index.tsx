@@ -2,9 +2,10 @@ import DefaultLayout from '../layouts/default';
 import SignupForm from '../../components/SignupForm';
 import Planet from './planet.svg';
 import Planet2 from './planet2.svg';
-// import FacebookSVG from './facebook.svg';
-// import GoogleSVG from './google.svg';
+import FacebookSVG from './facebook.svg';
+import TwitterSVG from './twitter.svg';
 import DiscordSVG from './discord.svg';
+import EmailSolidSVG from './email-solid.svg';
 import EmailSVG from './email.svg';
 import DiscordCircleSVG from './discord-circ.svg';
 import VideoSVG from './video.svg';
@@ -15,9 +16,11 @@ import './index.css';
 import { HashLink } from 'react-router-hash-link';
 import {
   Button,
+  IconButton,
   createMuiTheme,
   createStyles,
   makeStyles,
+  SvgIcon,
   responsiveFontSizes,
   Theme,
   Link,
@@ -99,7 +102,7 @@ const HomePage = () => {
             </Typography>
             <ThemeProvider theme={theme}>
               <div className={classes.buttonGroup}>
-                <div>
+                {/* <div>
                   <HashLink to="#signup">
                     <Button
                       variant="contained"
@@ -111,26 +114,37 @@ const HomePage = () => {
                   </HashLink>
                 </div>
                 <div>
-                  {/* <Button
+                  <Button
                     variant="contained"
                     color="secondary"
                     className={classes.loginBtn}
                   >
                     {t('Login')}
-                  </Button> */}
-                </div>
+                  </Button>
+                </div> */}
               </div>
             </ThemeProvider>
             <div className="socials">
+              <HashLink to="#signup">
+                <IconButton className="social-icon">
+                  <img src={EmailSolidSVG} alt={'Icon linked to socials'} />
+                </IconButton>
+              </HashLink>
               {[
                 { svg: DiscordSVG, link: 'https://discord.gg/DZSm47VHMz' },
                 { svg: GithubSVG, link: 'https://github.com/Lux-AI-Challenge' },
+                { svg: TwitterSVG, link: 'https://twitter.com/LuxAIChallenge' },
+                {
+                  svg: FacebookSVG,
+                  link:
+                    'https://www.facebook.com/Lux-AI-Challenge-108307191481441',
+                },
               ].map(({ svg, link }) => {
                 return (
                   <a href={link} target="_blank" rel="noreferrer" key={link}>
-                    <Button>
-                      <img src={svg} alt="social-logo" />
-                    </Button>
+                    <IconButton className="social-icon">
+                      <img src={svg} alt={'Icon linked to socials'} />
+                    </IconButton>
                   </a>
                 );
               })}

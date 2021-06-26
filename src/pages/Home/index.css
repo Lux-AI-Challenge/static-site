@@ -4,6 +4,10 @@
   background-color: #2c2e33;
   transition: all 0.2s;
 }
+.HomePage .social-icon img {
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
 .HomePage .video-art-wrapper {
   text-align: center;
 }
