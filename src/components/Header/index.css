@@ -2,9 +2,24 @@
   z-index: 10;
   position: relative;
 }
-.Header .header-tabs button {
-  margin-right: 1rem;
+.Header .header-tabs {
+  /* position: absolute; */
 }
 .Header .spacer {
   flex-grow: 1;
+}
+
+.Header .burger-menu-svg {
+  height: 2rem;
+}
+.Header .mobile-menu-btn {
+  margin-left: 0.25rem;
+  margin-top: 2px;
+}
+#mobile-menu {
+  margin-top: -4px;
+  margin-left: -4px;
+}
+#mobile-menu .MuiPaper-root {
+  background-color: #00afbd;
 }

@@ -101,6 +101,16 @@
     width: calc(100% + 200px);
   }
 }
+@media only screen and (max-width: 880px) {
+  .HomePage .backdrop {
+    right: -400px;
+    left: auto;
+    width: calc(100% + 400px);
+  }
+  .HomePage .splash .splash-text {
+    top: 10rem;
+  }
+}
 @media only screen and (max-width: 630px) {
   .HomePage .backdrop {
     right: auto;

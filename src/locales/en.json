@@ -1,7 +1,10 @@
 {
   "Header": {
-    "About Us": "About",
-    "Contact": "Contact"
+    "Home": "Home",
+    "Contact": "Contact",
+    "Forums": "Forums",
+    "Leaderboard": "Leaderboard",
+    "Compete": "Compete"
   },
   "Home": {
     "Sign Up": "Sign Up",

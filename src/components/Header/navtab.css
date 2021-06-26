@@ -1,0 +1,15 @@
+.NavTab {
+  display: inline-block;
+  text-align: center;
+  /* min-width: 10rem; */
+  margin-right: 2rem;
+  height: 64px;
+  line-height: 64px;
+}
+.NavTab.active {
+  /* padding-bottom: 12px; */
+  border-bottom: 6px solid white;
+}
+.NavTab a {
+  text-align: center;
+}
