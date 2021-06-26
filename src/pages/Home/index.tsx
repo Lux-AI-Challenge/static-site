@@ -20,7 +20,6 @@ import {
   createMuiTheme,
   createStyles,
   makeStyles,
-  SvgIcon,
   responsiveFontSizes,
   Theme,
   Link,
