@@ -11,15 +11,16 @@ import {
   // ThemeProvider,
   Typography,
 } from '@material-ui/core';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 const SponsorPage = () => {
-  // const { t } = useTranslation(['SponsorsPage']);
+  const { t } = useTranslation(['SponsorsPage']);
   // const classes = useStyles();
 
   return (
     <DefaultLayout>
       <div className={`SponsorsPage`}>
-        <Typography variant="h1">Welcome</Typography>
+        <Typography variant="h3">{t('title')}</Typography>
+        <Typography variant="body1">{t('body1')}</Typography>
       </div>
     </DefaultLayout>
   );

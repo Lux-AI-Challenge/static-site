@@ -1,2 +1,9 @@
 .SponsorsPage {
+  padding: 2rem;
+  background-color: #00afbd;
+  min-height: 100vh;
+}
+
+.SponsorsPage h3 {
+  font-weight: 700;
 }

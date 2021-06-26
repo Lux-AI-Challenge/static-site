@@ -6,7 +6,10 @@
     "Leaderboard": "Leaderboard",
     "Compete": "Compete"
   },
-  "SponsorsPage": {},
+  "SponsorsPage": {
+    "title": "Sponsors",
+    "body1": "We are actively looking for sponsors! If you are interested in working with us, or recruiting from the world's top talent in problem solving, analysis, AI and more, feel free to reach out to us at sponsorship@lux-ai.org"
+  },
   "Home": {
     "Sign Up": "Sign Up",
     "Login": "Login",
