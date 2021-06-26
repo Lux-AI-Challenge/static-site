@@ -1,6 +1,5 @@
 import {
   AppBar,
-  Button,
   // createStyles,
   // makeStyles,
   // Theme,
@@ -13,10 +12,10 @@ import {
 import React from 'react';
 import NavTab from './navtab';
 // import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import BurgerSVG from './burger.svg';
+// import BurgerSVG from './burger.svg';
 import './index.css';
 import { useHistory } from 'react-router-dom';
 // import LanguageContext from 'LanguageContext';
