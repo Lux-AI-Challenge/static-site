@@ -115,11 +115,11 @@ const Header = () => {
               to="/compete"
               text={t('Compete')}
             />*/}
-              <NavTab
+              {/* <NavTab
                 external
                 to="https://kaggle.com/c/..."
                 text={t('Leaderboard')}
-              />
+              /> */}
               <NavTab to="/sponsors" text={t('Sponsors')} />
               {/* <NavTab
                 external

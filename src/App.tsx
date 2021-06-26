@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'styles/base.css';
 import { useTranslation } from 'react-i18next';
 import HomePage from 'pages/Home';
+import SponsorPage from 'pages/Sponsors';
 import { LanguageProvider } from 'LanguageContext';
 import { Language } from 'languageconsts';
 
@@ -17,6 +18,7 @@ const App = () => {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/sponsors" component={SponsorPage} />
           </Switch>
         </BrowserRouter>
       </LanguageProvider>
