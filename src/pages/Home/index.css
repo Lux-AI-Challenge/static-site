@@ -30,7 +30,7 @@
   color: #f5c500;
 }
 .HomePage .container {
-  /* background-image: url('./stars.svg'); */
+  background-image: url('./stars.svg');
 }
 .HomePage .container h4 {
   margin-top: 2rem;
