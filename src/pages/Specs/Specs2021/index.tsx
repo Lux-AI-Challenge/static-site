@@ -21,6 +21,7 @@ const Specs2021Page = () => {
   const classes = useStyles();
   useEffect(() => {
     const url = `/specs2021.md`;
+    axios.get(url).then((res) => {
       console.log({ res });
       setContent(md.render(res.data));
       md.parse(res.data, '').forEach((token) => {
