@@ -45,7 +45,6 @@ const Specs2021Page = () => {
   useEffect(() => {
     const url = `/specs2021.md`;
     axios.get(url).then((res) => {
-      console.log({ res });
       setContent(md.render(res.data));
       md.parse(res.data, '').forEach((token) => {
         if (token.type === 'html_block') {
@@ -90,6 +89,7 @@ const Specs2021Page = () => {
     return () => {
       clearInterval(timer);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <DefaultLayout>

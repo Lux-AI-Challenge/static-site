@@ -19,7 +19,6 @@ const NavTab = ({ to, text, external }: NavTabProps) => {
   if (window.location.pathname === to) {
     active = true;
   }
-  console.log();
   return (
     <div className={`NavTab ${active ? 'active' : ''}`}>
       <Link to={to}>
