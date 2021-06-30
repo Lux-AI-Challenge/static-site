@@ -79,7 +79,7 @@ const Specs2021Page = () => {
       }
     });
   }, []);
-  const startDate = new Date('2021-06-30T18:00:00-0800');
+  const startDate = new Date('2021-06-30T17:00:00-0800');
   useEffect(() => {
     const timer = setInterval(() => {
       setClock(getTimeDifferenceString(new Date(), startDate));
