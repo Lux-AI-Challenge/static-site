@@ -6,7 +6,30 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 const md = new MarkdownIt({ html: true, linkify: true });
+
+const getTimeDifferenceString = (now: Date, start: Date): string => {
+  const dms = start.getTime() - now.getTime();
+  const ds = Math.floor(dms / 1000);
+  const seconds = ds % 60;
+  const minutes = Math.floor(ds / 60) % 60;
+  const hours = Math.floor(ds / 3600) % 24;
+  let mstr = `${minutes}`;
+  let sstr = `${seconds}`;
+  let hstr = `${hours}`;
+  if (seconds < 10) {
+    sstr = `0${sstr}`;
+  }
+  if (minutes < 10) {
+    mstr = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hstr = `0${hours}`;
+  }
+  return `${hstr}:${mstr}:${sstr}`;
+};
+
 const Specs2021Page = () => {
+  const [clock, setClock] = useState('');
   const [content, setContent] = useState('');
   const useStyles = makeStyles((theme: Theme) => {
     return createStyles({
@@ -57,12 +80,27 @@ const Specs2021Page = () => {
       }
     });
   }, []);
+  const startDate = new Date('2021-06-30T18:00:00-0800');
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setClock(getTimeDifferenceString(new Date(), startDate));
+    }, 1000);
+    setClock(getTimeDifferenceString(new Date(), startDate));
+    console.log("nice try, but specs aren't in the html");
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   return (
     <DefaultLayout>
       <div className={`${classes.page} Specs2021Page`}>
         <Typography variant="h2"></Typography>
+
         {/* <ThemeProvider theme={theme}> */}
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        {new Date().getTime() < startDate.getTime() && (
+          <div className="countdown">{clock}</div>
+        )}
         {/* </ThemeProvider> */}
       </div>
     </DefaultLayout>

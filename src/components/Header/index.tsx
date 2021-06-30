@@ -60,7 +60,6 @@ const Header = () => {
       history.push(to);
     };
   };
-  console.log({ smallSize });
   return (
     <div className="Header">
       <AppBar position="static">

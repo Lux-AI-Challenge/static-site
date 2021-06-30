@@ -6,7 +6,11 @@
   padding: 3rem;
   min-height: 100vh;
 }
-
+.Specs2021Page .countdown {
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 4rem;
+}
 .Specs2021Page .anchor {
   display: block;
   position: relative;
