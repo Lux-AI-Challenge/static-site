@@ -19,9 +19,11 @@
     "axios": "^0.21.1",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
+    "markdown-it": "^12.0.6",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-hook-form": "^6.14.1",
     "react-i18next": "^11.8.5",
     "react-router-dom": "^5.2.0",
@@ -54,5 +56,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.0.2",
+    "@types/react-helmet": "^6.1.1"
   }
 }
