@@ -43,7 +43,8 @@ const Specs2021Page = () => {
   });
   const classes = useStyles();
   useEffect(() => {
-    const url = `/specs2021.md`;
+    const url =
+      'https://github.com/Lux-AI-Challenge/Lux-Design-2021/raw/master/specs.md'; ///`/specs2021.md`;
     axios.get(url).then((res) => {
       setContent(md.render(res.data));
       md.parse(res.data, '').forEach((token) => {
