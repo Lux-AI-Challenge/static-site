@@ -29,7 +29,7 @@ import { useHistory } from 'react-router-dom';
 //   })
 // );
 
-const Header = () => {
+const Header = ({ day }: { day?: boolean } = { day: false }) => {
   // const classes = useStyles();
   const smallSize = useMediaQuery('(max-width: 768px)');
   const { t } = useTranslation(['Header']);
@@ -62,7 +62,7 @@ const Header = () => {
   };
   return (
     <div className="Header">
-      <AppBar position="static">
+      <AppBar position="static" className={`${day ? 'day' : 'night'}`}>
         {smallSize ? (
           <div className="mobile-menu-wrapper">
             <IconButton
@@ -86,7 +86,8 @@ const Header = () => {
               </SvgIcon>
             </IconButton>
             <Menu
-              id="mobile-menu"
+              id={`mobile-menu`}
+              className={`${day ? 'day' : 'night'}`}
               anchorEl={anchorEl}
               keepMounted
               open={Boolean(anchorEl)}

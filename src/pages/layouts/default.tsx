@@ -7,6 +7,7 @@ import Header from 'components/Header';
 import './default.css';
 type LayoutProps = {
   children: JSX.Element | JSX.Element[];
+  day?: boolean;
 };
 
 let outerTheme = createMuiTheme({
@@ -30,13 +31,14 @@ let outerTheme = createMuiTheme({
     },
   },
 });
+
 outerTheme = responsiveFontSizes(outerTheme);
 
-const DefaultLayout = ({ children }: LayoutProps) => {
+const DefaultLayout = ({ children, day }: LayoutProps) => {
   return (
     <div className="DefaultLayout">
       <ThemeProvider theme={outerTheme}>
-        <Header />
+        <Header day={day} />
         <div className="container">{children}</div>
       </ThemeProvider>
     </div>

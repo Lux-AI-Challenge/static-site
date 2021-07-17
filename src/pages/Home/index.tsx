@@ -78,7 +78,7 @@ const HomePage = () => {
   const classes = useStyles();
 
   return (
-    <DefaultLayout>
+    <DefaultLayout day>
       <div className={`${classes.homePage} HomePage`}>
         <div className={`splash ${classes.splash}`}>
           <div className="backdrop-wrapper">

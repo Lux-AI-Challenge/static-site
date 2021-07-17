@@ -16,10 +16,19 @@
   margin-left: 0.25rem;
   margin-top: 2px;
 }
+.Header .night {
+  background-color: #2c2e33;
+}
+.Header .day {
+  background-color: #00afbd;
+}
 #mobile-menu {
   margin-top: -4px;
   margin-left: -4px;
 }
-#mobile-menu .MuiPaper-root {
+#mobile-menu.night {
+  background-color: #2c2e33;
+}
+#mobile-menu.day {
   background-color: #00afbd;
 }
