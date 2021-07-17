@@ -6,6 +6,9 @@
   padding: 3rem;
   min-height: 100vh;
 }
+.Specs2021Page .container {
+  background-image: url('./stars.svg');
+}
 .Specs2021Page .countdown {
   font-size: 8rem;
   text-align: center;
@@ -38,25 +41,50 @@
 
 .Specs2021Page table {
   margin-top: 1rem;
-  border-collapse: collapse;
-  background-color: #f9efe2;
-  border-radius: 15px;
-  color: rgba(51, 56, 68, 1);
+  /* border-collapse: collapse; */
+  /* background-color: #f9efe2; */
+  border-spacing: 2px;
+  color: #f9efe1;
+  /* color: rgba(51, 56, 68, 1); */
+}
+.Specs2021Page table tr:nth-child(1) > td:nth-child(2) {
+  border-top-left-radius: 25px;
+}
+.Specs2021Page table tr:nth-child(1) > td:last-child {
+  border-top-right-radius: 25px;
+}
+.Specs2021Page table tr:first-child > td:first-child {
+  background-color: #5f5282;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.Specs2021Page table tr > td:first-child {
+  background-color: #5c528e;
+}
+.Specs2021Page table tr:last-child > td:first-child {
+  border-bottom-left-radius: 25px;
+}
+.Specs2021Page table tr:last-child > td:nth-child(2) {
+  /* border-bottom-left-radius: 25px; */
+}
+.Specs2021Page table tr:last-child > td:last-child {
+  border-bottom-right-radius: 25px;
 }
 .Specs2021Page table tr:first-child > td {
-  color: #00afbd;
   font-weight: 500;
   font-size: 1.2rem;
-  border-bottom: solid 2px #00afbd;
+  /* border-bottom: solid 4px #2c2e33; */
   padding: 1rem;
+  background-color: #2273ab;
 }
 .Specs2021Page table td {
-  border: solid 2px #00afbd;
+  border: solid 2px #2c2e33;
   text-align: center;
-  padding-top: 0.35rem;
-  padding-bottom: 0.35rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  background-color: #6f7ca6;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .Specs2021Page table tr:first-child td {
   /* padding-bottom: 1rem; */

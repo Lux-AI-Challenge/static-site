@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 const md = new MarkdownIt({ html: true, linkify: true });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getTimeDifferenceString = (now: Date, start: Date): string => {
   const dms = start.getTime() - now.getTime();
   const ds = Math.floor(dms / 1000);
@@ -29,12 +30,11 @@ const getTimeDifferenceString = (now: Date, start: Date): string => {
 };
 
 const Specs2021Page = () => {
-  const [clock, setClock] = useState('');
   const [content, setContent] = useState('');
   const useStyles = makeStyles((theme: Theme) => {
     return createStyles({
       page: {
-        backgroundColor: '#00AFBD',
+        backgroundColor: '#2c2e33',
       },
       splash: {
         backgroundColor: '#00AFBD',
@@ -80,29 +80,14 @@ const Specs2021Page = () => {
       }
     });
   }, []);
-  const startDate = new Date('2021-06-30T17:00:00-0800');
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setClock(getTimeDifferenceString(new Date(), startDate));
-    }, 1000);
-    setClock(getTimeDifferenceString(new Date(), startDate));
-    console.log("nice try, but specs aren't in the html");
-    return () => {
-      clearInterval(timer);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
   return (
     <DefaultLayout>
       <div className={`${classes.page} Specs2021Page`}>
         <Typography variant="h2"></Typography>
-
-        {/* <ThemeProvider theme={theme}> */}
-        <div dangerouslySetInnerHTML={{ __html: content }}></div>
-        {new Date().getTime() < startDate.getTime() && (
-          <div className="countdown">{clock}</div>
-        )}
-        {/* </ThemeProvider> */}
+        <div
+          className="container"
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></div>
       </div>
     </DefaultLayout>
   );
