@@ -88,14 +88,14 @@ const Specs2021Page = () => {
       document.addEventListener(
         'scroll',
         () => {
-          for (let i = 0; i < h3s.length; i++) {
-            const h3 = h3s[i + 1 - 1];
-            // if (h3.el.previousElementSibling) {
-            if (isInViewport(h3.el)) {
-              setH3Active(i);
-              break;
+          for (let i = 0; i < h3s.length - 1; i++) {
+            const h3 = h3s[i + 1];
+            if (h3.el.previousElementSibling) {
+              if (isInViewport(h3.el.previousElementSibling)) {
+                setH3Active(i);
+                break;
+              }
             }
-            // }
           }
         },
         {
