@@ -1,0 +1,48 @@
+.Sponsors2021Page {
+  padding: 2rem;
+  background-color: #2c2e33;
+  min-height: 100vh;
+  background-image: url('./stars.svg');
+}
+
+.Sponsors2021Page h3 {
+  font-weight: 700;
+}
+.Sponsors2021Page .sponsor-card {
+  margin-bottom: 4rem;
+}
+.Sponsors2021Page .sponsor-card .logo-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.Sponsors2021Page .sponsor-card .logo-wrapper img {
+  max-width: 14rem;
+  max-height: 14rem;
+  background-color: white;
+}
+.Sponsors2021Page .sponsor-card .company-name {
+  margin-bottom: 1rem;
+}
+.Sponsors2021Page .sponsor-card .company-name span {
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #f9efe2;
+}
+.Sponsors2021Page .sponsor-card .company-name .tier {
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+}
+.Sponsors2021Page .sponsor-card .company-name .tier.Gold {
+  color: #eec53a;
+}
+.Sponsors2021Page .sponsor-card .company-name .tier.Bronze {
+  color: brown;
+}
+.Sponsors2021Page .sponsor-card .company-desc {
+  /* font-weight: 300; */
+  /* font-size: 1rem; */
+}
+.Sponsors2021Page .sponsors-wrapper {
+  margin-top: 4rem;
+}
