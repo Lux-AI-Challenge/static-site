@@ -1,6 +1,6 @@
 import DefaultLayout from '../../layouts/default';
 import QuantCo from './quantco_Q_black.png';
-import JVentures from './jventures.png';
+// import JVentures from './jventures.png';
 import './index.css';
 import {
   Grid,
