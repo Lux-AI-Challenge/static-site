@@ -98,7 +98,7 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
               <MenuItem onClick={handleClose('/')}>{t('Home')}</MenuItem>
               {/* <MenuItem onClick={handleClose}>{t('Compete')}</MenuItem>
               <MenuItem onClick={handleClose}>{t('Leaderboard')}</MenuItem> */}
-              <MenuItem onClick={handleClose('/sponsors')}>
+              <MenuItem onClick={handleClose('/sponsors-2021')}>
                 {t('Sponsors')}
               </MenuItem>
               {/* <MenuItem onClick={handleClose}>{t('Forums')}</MenuItem> */}
@@ -120,7 +120,7 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
                 to="https://kaggle.com/c/..."
                 text={t('Leaderboard')}
               /> */}
-              <NavTab to="/sponsors" text={t('Sponsors')} />
+              <NavTab to="/sponsors-2021" text={t('Sponsors')} />
               {/* <NavTab
                 external
                 to="https://kaggle.com/c/..."
