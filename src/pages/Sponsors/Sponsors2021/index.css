@@ -39,9 +39,11 @@
 .Sponsors2021Page .sponsor-card .company-name .tier.Bronze {
   color: brown;
 }
-.Sponsors2021Page .sponsor-card .company-desc {
-  /* font-weight: 300; */
-  /* font-size: 1rem; */
+.Sponsors2021Page .sponsor-card .company-desc a {
+  color: #9bbcff;
+}
+.Sponsors2021Page .sponsor-card .company-desc a:hover {
+  text-decoration: underline;
 }
 .Sponsors2021Page .sponsors-wrapper {
   margin-top: 4rem;
