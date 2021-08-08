@@ -26,7 +26,7 @@
     "details": {
       "title": "Competition Details",
       "title1": "Time",
-      "body1": "Lux AI season one will be pre-released on June 30, 2021 6PM EST. The ranked leaderboard will be online at a later date and run for at least a month (this may be extended).",
+      "body1": "Lux AI season will officially release in mid-august, stay tuned for exact launch date!.",
       "title2": "Location",
       "body2": "Virtual/Twitch/Youtube",
       "title3": "Tournament Format",
@@ -40,10 +40,10 @@
     },
     "tournament-schedule": {
       "title": "Tournament Schedule",
-      "title1": "Sprint Tournament",
-      "body1": "The first tournament will run 3 weeks into the competition, competitors can compete for smaller prizes and also analyze and learn from other competitors and develop new strategies and metas.",
-      "title2": "Final",
-      "body2": "The final tournament will be run after submissions are closed where competitors compete for the main prize pool."
+      "title1": "Main Tournament",
+      "body1": "The main tournament will run throughout the competition for about 3-4 months. At the conclusion of this, we will use the rankings on the leaderboard as the final rankings and give out awards based on that.",
+      "title2": "Sprint",
+      "body2": "At the end of each month, we will give out awards to the top 2 competitors who haven't received the sprint award."
     },
     "contact": {
       "title": "Contact Us",
