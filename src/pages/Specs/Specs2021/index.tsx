@@ -59,6 +59,13 @@ const Specs2021Page = () => {
     const url =
       'https://raw.githubusercontent.com/Lux-AI-Challenge/Lux-Design-2021/master/specs.md'; ///`/specs2021.md`;
     axios.get(url).then((res) => {
+      console.log(res);
+      res.data = res.data.replace(/\n#### /g, '\n##### ');
+      res.data = res.data.replace(/\n### /g, '\n#### ');
+      res.data = res.data.replace(/\n## /g, '\n### ');
+      res.data = res.data.replace(/\n# /g, '\n## ');
+      res.data = res.data.replace(/# /, '## ');
+      // res.data = res.data.replace(/\n## /g, '\n###')
       setContent(md.render(res.data));
       md.parse(res.data, '').forEach((token) => {
         if (token.type === 'html_block') {
