@@ -41,9 +41,7 @@
     "tournament-schedule": {
       "title": "Tournament Schedule",
       "title1": "Main Tournament",
-      "body1": "The main tournament will run throughout the competition for about 3-4 months. At the conclusion of this, we will use the rankings on the leaderboard as the final rankings and give out awards based on that.",
-      "title2": "Sprint",
-      "body2": "At the end of each month, we will give out awards to the top 2 competitors who haven't received the sprint award."
+      "body1": "The main tournament will run throughout the competition for about 3 months. At the conclusion of this, we will use the rankings on the leaderboard as the final rankings and give out awards based on that."
     },
     "contact": {
       "title": "Contact Us",
@@ -52,15 +50,15 @@
     },
     "signup": {
       "title": "Sign Up",
-      "body1": "Sign up to be the first to hear about important announcements regarding Lux AI such as the specifications release for season 1 and updates to the competition. We hope to see you there!"
+      "body1": "Sign up to be the first to hear about important announcements regarding Lux AI. We hope to see you there!"
     },
     "partner": {
       "title": "Partnerships",
-      "body1": "To be announced!"
+      "body1": "We are happy to announce we are collaborating with Kaggle to Lux AI Season 1!"
     },
     "sponsor": {
       "title": "Sponsors",
-      "body1": "We are actively looking for sponsors! If you are interested in working with us, or recruiting from the world's top talent in problem solving, analysis, AI and more, feel free to reach out to us at sponsorship@lux-ai.org"
+      "body1": "Thank you to QuantCo, JVentures, and QAImera for sponsoring Season 1 of our competition! We are actively looking for sponsors for future competitions! If you are interested in working with us, or recruiting from the world's top talent in problem solving, analysis, AI and more, feel free to reach out to us at sponsorship@lux-ai.org"
     }
   },
   "SignupForm": {
