@@ -110,22 +110,23 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
             <div className="header-tabs">
               <NavTab to="/" text={t('Home')} />
 
-              {/* <NavTab
-              external
-              to="/compete"
-              text={t('Compete')}
-            />*/}
+              <NavTab external to="/specs-2021" text={t('Learn')} />
+              <NavTab
+                external
+                to="https://kaggle.com/c/lux-ai-2021/"
+                text={t('Compete')}
+              />
               {/* <NavTab
                 external
                 to="https://kaggle.com/c/..."
                 text={t('Leaderboard')}
               /> */}
               <NavTab to="/sponsors-2021" text={t('Sponsors')} />
-              {/* <NavTab
+              <NavTab
                 external
-                to="https://kaggle.com/c/..."
+                to="https://kaggle.com/c/lux-ai-2021/discussion"
                 text={t('Forums')}
-              /> */}
+              />
               {/* <NavTab to="/#contact" text={t('Contact')} /> */}
               {/* <HashLink to="/contact">
               <Button>{t('Contact')}</Button>
