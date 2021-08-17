@@ -96,12 +96,24 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
               }}
             >
               <MenuItem onClick={handleClose('/')}>{t('Home')}</MenuItem>
-              {/* <MenuItem onClick={handleClose}>{t('Compete')}</MenuItem>
-              <MenuItem onClick={handleClose}>{t('Leaderboard')}</MenuItem> */}
+              <MenuItem
+                onClick={handleClose('https://kaggle.com/c/lux-ai-2021/')}
+              >
+                {t('Compete')}
+              </MenuItem>
+              <MenuItem onClick={handleClose('/specs-2021')}>
+                {t('Learn')}
+              </MenuItem>
               <MenuItem onClick={handleClose('/sponsors-2021')}>
                 {t('Sponsors')}
               </MenuItem>
-              {/* <MenuItem onClick={handleClose}>{t('Forums')}</MenuItem> */}
+              <MenuItem
+                onClick={handleClose(
+                  'https://kaggle.com/c/lux-ai-2021/discussion'
+                )}
+              >
+                {t('Forums')}
+              </MenuItem>
             </Menu>
           </div>
         ) : (
