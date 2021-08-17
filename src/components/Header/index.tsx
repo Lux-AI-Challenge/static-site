@@ -122,7 +122,7 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
             <div className="header-tabs">
               <NavTab to="/" text={t('Home')} />
 
-              <NavTab external to="/specs-2021" text={t('Learn')} />
+              <NavTab to="/specs-2021" text={t('Learn')} />
               <NavTab
                 external
                 to="https://kaggle.com/c/lux-ai-2021/"
