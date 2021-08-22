@@ -33,6 +33,18 @@
   margin-left: 1.5rem;
   font-size: 1.4rem;
 }
+@media only screen and (max-width: 1000px) {
+  .Sponsors2021Page .sponsor-card .company-name {
+    text-align: center;
+  }
+  .Sponsors2021Page .sponsor-card .company-name .tier {
+    display: block;
+    margin: 0;
+  }
+  .Sponsors2021Page .sponsor-card .logo-wrapper {
+    margin: auto;
+  }
+}
 .Sponsors2021Page .sponsor-card .company-name .tier.Gold {
   color: #eec53a;
 }

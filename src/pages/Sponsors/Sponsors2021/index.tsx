@@ -65,12 +65,12 @@ const Sponsor2021Page = () => {
             return (
               <div className="sponsor-card">
                 <Grid container>
-                  <Grid xs={3} className="logo-wrapper">
+                  <Grid item md={3} className="logo-wrapper">
                     <a href={info.link} target="_blank" rel="noreferrer">
                       <img src={info.logo} alt={`${info.name} logo`} />
                     </a>
                   </Grid>
-                  <Grid xs={9}>
+                  <Grid item md={9}>
                     <Typography variant="h4" className="company-name">
                       <a href={info.link} target="_blank" rel="noreferrer">
                         <span>{info.name}</span>
