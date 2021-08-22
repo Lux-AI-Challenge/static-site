@@ -12,7 +12,7 @@ import {
   Typography,
   useMediaQuery,
 } from '@material-ui/core';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { HashLink } from 'react-router-hash-link';
@@ -40,7 +40,7 @@ const getTimeDifferenceString = (now: Date, start: Date): string => {
   return `${hstr}:${mstr}:${sstr}`;
 };
 
-const Specs2021Page = () => {
+const Specs2021Page = React.memo(() => {
   const [content, setContent] = useState('');
   const [h3s, setH3s] = useState<{ text: string; href: string; el: any }[]>([]);
   const [h3Active, setH3Active] = useState(0);
@@ -175,6 +175,6 @@ const Specs2021Page = () => {
       </div>
     </DefaultLayout>
   );
-};
+});
 
 export default Specs2021Page;

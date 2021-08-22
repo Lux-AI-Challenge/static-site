@@ -54,7 +54,13 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = (to: string) => {
+  const handleClose = (to: string, external: boolean = false) => {
+    if (external) {
+      return () => {
+        setAnchorEl(null);
+        window.location.href = to;
+      };
+    }
     return () => {
       setAnchorEl(null);
       history.push(to);
@@ -90,6 +96,7 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
               className={`${day ? 'day' : 'night'}`}
               anchorEl={anchorEl}
               keepMounted
+              // hideBackdrop
               open={Boolean(anchorEl)}
               onClose={() => {
                 setAnchorEl(null);
@@ -97,7 +104,7 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
             >
               <MenuItem onClick={handleClose('/')}>{t('Home')}</MenuItem>
               <MenuItem
-                onClick={handleClose('https://kaggle.com/c/lux-ai-2021/')}
+                onClick={handleClose('https://kaggle.com/c/lux-ai-2021/', true)}
               >
                 {t('Compete')}
               </MenuItem>
@@ -109,7 +116,8 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
               </MenuItem>
               <MenuItem
                 onClick={handleClose(
-                  'https://kaggle.com/c/lux-ai-2021/discussion'
+                  'https://kaggle.com/c/lux-ai-2021/discussion',
+                  true
                 )}
               >
                 {t('Forums')}

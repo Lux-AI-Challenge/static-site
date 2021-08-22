@@ -24,7 +24,9 @@
   z-index: -1;
   top: -55px;
 }
-
+.Specs2021Page img {
+  max-width: calc(100vw - 8rem);
+}
 .Specs2021Page h2 {
   font-weight: 500;
   font-size: 3.5rem;
@@ -137,4 +139,14 @@
   left: -16px;
   height: 12px;
   border-radius: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .Specs2021Page {
+    padding: 1.5rem;
+  }
+  .Specs2021Page h2 {
+    font-size: 2.5rem;
+  }
+  .Specs2021Page table {
+  }
 }
