@@ -96,27 +96,29 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
               className={`${day ? 'day' : 'night'}`}
               anchorEl={anchorEl}
               keepMounted
-              // hideBackdrop
               open={Boolean(anchorEl)}
               onClose={() => {
                 setAnchorEl(null);
               }}
             >
               <MenuItem onClick={handleClose('/')}>{t('Home')}</MenuItem>
+              <MenuItem onClick={handleClose('/specs-2022-beta')}>
+                {t('Learn')}
+              </MenuItem>
               <MenuItem
-                onClick={handleClose('https://kaggle.com/c/lux-ai-2021/', true)}
+                onClick={handleClose(
+                  'https://kaggle.com/c/lux-ai-2022-beta/',
+                  true
+                )}
               >
                 {t('Compete')}
               </MenuItem>
-              <MenuItem onClick={handleClose('/specs-2021')}>
-                {t('Learn')}
-              </MenuItem>
-              <MenuItem onClick={handleClose('/sponsors-2021')}>
+              <MenuItem onClick={handleClose('/sponsors-2022')}>
                 {t('Sponsors')}
               </MenuItem>
               <MenuItem
                 onClick={handleClose(
-                  'https://kaggle.com/c/lux-ai-2021/discussion',
+                  'https://kaggle.com/c/lux-ai-2022-beta/discussion',
                   true
                 )}
               >
@@ -129,61 +131,18 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
             <div className="spacer"></div>
             <div className="header-tabs">
               <NavTab to="/" text={t('Home')} />
-
-              <NavTab to="/specs-2021" text={t('Learn')} />
+              <NavTab to="/specs-2022-beta" text={t('Learn')} />
               <NavTab
                 external
-                to="https://kaggle.com/c/lux-ai-2021/"
+                to="https://kaggle.com/c/lux-ai-2022-beta/"
                 text={t('Compete')}
               />
-              {/* <NavTab
-                external
-                to="https://kaggle.com/c/..."
-                text={t('Leaderboard')}
-              /> */}
-              <NavTab to="/sponsors-2021" text={t('Sponsors')} />
+              <NavTab to="/sponsors-2022" text={t('Sponsors')} />
               <NavTab
                 external
-                to="https://kaggle.com/c/lux-ai-2021/discussion"
+                to="https://kaggle.com/c/lux-ai-2022-beta/discussion"
                 text={t('Forums')}
               />
-              {/* <NavTab to="/#contact" text={t('Contact')} /> */}
-              {/* <HashLink to="/contact">
-              <Button>{t('Contact')}</Button>
-            </HashLink>
-            <HashLink to="#partners">
-              <Button>{t('Partners')}</Button>
-            </HashLink>
-            <HashLink to="#sponsor">
-              <Button>{t('Sponsors')}</Button>
-            </HashLink> */}
-              {/* <Button
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
-            >
-              {language.toUpperCase()}
-            </Button> */}
-              {/* <Menu
-              id="simple-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <MenuItem
-                onClick={handleLanguageTabClose(Language.EN)}
-                className={classes.langBtn}
-              >
-                English
-              </MenuItem>
-              <MenuItem
-                onClick={handleLanguageTabClose(Language.ZH)}
-                className={classes.langBtn}
-              >
-                Chinese
-              </MenuItem>
-            </Menu> */}
             </div>
           </Toolbar>
         )}
