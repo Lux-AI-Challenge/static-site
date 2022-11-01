@@ -1,11 +1,8 @@
 import DefaultLayout from '../layouts/default';
-import SignupForm from '../../components/SignupForm';
 import Planet from './planet.svg';
 import Planet2 from './planet2.svg';
-import FacebookSVG from './facebook.svg';
 import TwitterSVG from './twitter.svg';
 import DiscordSVG from './discord.svg';
-import EmailSolidSVG from './email-solid.svg';
 import EmailSVG from './email.svg';
 import DiscordCircleSVG from './discord-circ.svg';
 import VideoSVG from './video.svg';
@@ -13,40 +10,15 @@ import CityInfoSVG from './cityinfo.svg';
 import ContactWorkersSVG from './workers.svg';
 import GithubSVG from './github.svg';
 import './index.css';
-import { HashLink } from 'react-router-hash-link';
 import {
   Button,
   IconButton,
-  createMuiTheme,
   createStyles,
   makeStyles,
-  responsiveFontSizes,
   Theme,
-  Link,
-  ThemeProvider,
   Typography,
 } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
-let theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#3686FF',
-    },
-    secondary: {
-      main: '#C08000',
-    },
-  },
-  typography: {
-    button: {
-      fontSize: 18,
-      width: '16rem',
-
-      color: 'inherit',
-      textTransform: 'none',
-    },
-  },
-});
-theme = responsiveFontSizes(theme);
 const HomePage = () => {
   // const night = new Date().getHours() > 16;
   const night = false;
@@ -99,45 +71,11 @@ const HomePage = () => {
             >
               {t('subtitle')}
             </Typography>
-            <ThemeProvider theme={theme}>
-              <div className={classes.buttonGroup}>
-                {/* <div>
-                  <HashLink to="#signup">
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      className={classes.signupBtn}
-                    >
-                      {t('Sign Up')}
-                    </Button>
-                  </HashLink>
-                </div>
-                <div>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    className={classes.loginBtn}
-                  >
-                    {t('Login')}
-                  </Button>
-                </div> */}
-              </div>
-            </ThemeProvider>
             <div className="socials">
-              <HashLink to="#signup">
-                <IconButton className="social-icon">
-                  <img src={EmailSolidSVG} alt={'Icon linked to socials'} />
-                </IconButton>
-              </HashLink>
               {[
                 { svg: DiscordSVG, link: 'https://discord.gg/DZSm47VHMz' },
                 { svg: GithubSVG, link: 'https://github.com/Lux-AI-Challenge' },
                 { svg: TwitterSVG, link: 'https://twitter.com/LuxAIChallenge' },
-                {
-                  svg: FacebookSVG,
-                  link:
-                    'https://www.facebook.com/Lux-AI-Challenge-108307191481441',
-                },
               ].map(({ svg, link }) => {
                 return (
                   <a href={link} target="_blank" rel="noreferrer" key={link}>
@@ -157,44 +95,7 @@ const HomePage = () => {
             <Typography variant="body1">{t('sec1.body1')}</Typography>
             <Typography variant="body1">{t('sec1.body2')}</Typography>
             <Typography variant="body1">{t('sec1.body3')}</Typography>
-            <Typography variant="body1">
-              {t('sec1.body4')}{' '}
-              <Link
-                href="https://halite.io/"
-                target="_blank"
-                rel="noreferrer"
-                color="secondary"
-              >
-                Halite
-              </Link>
-              ,{' '}
-              <Link
-                href="https://terminal.c1games.com/"
-                target="_blank"
-                rel="noreferrer"
-                color="secondary"
-              >
-                Terminal
-              </Link>
-              ,{' '}
-              <Link
-                href="https://battlecode.org/"
-                target="_blank"
-                rel="noreferrer"
-                color="secondary"
-              >
-                Battlecode
-              </Link>
-              ,{' '}
-              <Link
-                href="http://ants.aichallenge.org/"
-                target="_blank"
-                rel="noreferrer"
-                color="secondary"
-              >
-                AI Challenge
-              </Link>
-            </Typography>
+            <Typography variant="body1">{t('sec1.body4')} </Typography>
             <Typography variant="body1">{t('sec1.body5')}</Typography>
           </section>
           <section>
@@ -248,11 +149,6 @@ const HomePage = () => {
           <section id="sponsor">
             <Typography variant="h4">{t('sponsor.title')}</Typography>
             <Typography variant="body1">{t('sponsor.body1')}</Typography>
-          </section>
-          <section id="signup">
-            <Typography variant="h4">{t('signup.title')}</Typography>
-            <Typography variant="body1">{t('signup.body1')}</Typography>
-            <SignupForm />
           </section>
           <div className="contact-art-wrapper">
             <img src={ContactWorkersSVG} className={`contact-art`} alt="art" />

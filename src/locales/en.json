@@ -13,20 +13,20 @@
   "Home": {
     "Sign Up": "Sign Up",
     "Login": "Login",
-    "subtitle": "A novel approach to AI Programming Challenges.",
+    "subtitle": "A novel approach to AI Programming Challenges. Beta competition is released!",
     "title": "Welcome To Lux.",
     "sec1": {
       "title": "What is the Lux AI Challenge?",
-      "body1": "Lux is an AI programming game competition.",
-      "body2": "Teams are given the Lux design specification. Starting off with a very basic strategy, teams will improve and upload new submissions to the competition and compete directly against other competitors to climb the leaderboard.",
+      "body1": "Lux AI is one of the world's most popular AI programming game competitions. In Lux AI Season 1 we had 22,000+ submissions from 1,100+ different teams across 80+ countries competing on a global stage to build the strongest AI to play novel games.",
+      "body2": "In the challenge, teams are given the Lux design specification. Starting off with a very basic strategy, teams will improve and upload new submissions to the competition and compete directly against other competitors to climb the leaderboard.",
       "body3": "Generally, the competition involves a multi-variable optimization and resource gathering and allocation problem in a 1v1 scenario against competitor bots. Successful submissions will not only involve solving this optimization, but also responding to the opposite team and coming out on top.",
-      "body4": "You and your team will have to make improvements to unit navigation, resource gathering, macro and micro strategies and more to incrementally increase the power of your bot. See the other competitions for examples: ",
+      "body4": "You and your team will have to make improvements to unit navigation, resource gathering, macro and micro strategies and more to incrementally increase the power of your bot. Past competitors have used solutions from brute force search, heuristics, deep reinforcement learning, and imitation learning to compete!",
       "body5": "We are focused on user-centered, inclusive, and engaging designs that work to bring wide ranging complexity but maintain accessibility for our competitors. We're dedicated to crafting competitions that require creativity and out-of-the-box thinking."
     },
     "details": {
       "title": "Competition Details",
       "title1": "Time",
-      "body1": "Lux AI Season 1 has started! It runs from August 16 to December 6th",
+      "body1": "Lux AI Season 2 beta has been released! The Official competition be about one month after the beta",
       "title2": "Location",
       "body2": "Virtual/Twitch/Youtube",
       "title3": "Tournament Format",
@@ -34,7 +34,7 @@
       "title4": "Team size",
       "body4": "1~5 people",
       "title5": "Programming Languages",
-      "body5": "Python, Javascript, C++, Java will be officially supported. More are TBD. PRs are welcomed for other languages!",
+      "body5": "Python, Typescript/Javascript, C++ will be officially supported. More are TBD. PRs are welcomed for other languages!",
       "title6": "Eligibility",
       "body6": "Anyone is eligible to compete! As long as you submit code you will be considered a participant!"
     },
@@ -54,11 +54,11 @@
     },
     "partner": {
       "title": "Partnerships",
-      "body1": "We are happy to announce we are collaborating with Kaggle to run Lux AI Season 1!"
+      "body1": "We are happy to announce we are collaborating with Kaggle again to run Lux AI Season 2!"
     },
     "sponsor": {
       "title": "Sponsors",
-      "body1": "Thank you to QuantCo, JVentures, and QAImera for sponsoring Season 1 of our competition! We are actively looking for sponsors for future competitions! If you are interested in working with us, or recruiting from the world's top talent in problem solving, analysis, AI and more, feel free to reach out to us at sponsorship@lux-ai.org"
+      "body1": "We are actively looking for sponsors for future competitions! If you are interested in working with us, or recruiting from the world's top talent in problem solving, analysis, AI and more, feel free to reach out to us at sponsorship@lux-ai.org"
     }
   },
   "SignupForm": {
