@@ -57,7 +57,7 @@ const Specs2022BetaPage = React.memo(() => {
   const classes = useStyles();
   useEffect(() => {
     const url =
-      'https://raw.githubusercontent.com/Lux-AI-Challenge/Lux-Design-2022/24e27356b09fad7132ba677ebd67a1ecf18e9252/specs.md'; ///`/specs2021.md`;
+      'https://raw.githubusercontent.com/Lux-AI-Challenge/Lux-Design-2022/main/specs.md';
     axios.get(url).then((res) => {
       console.log(res);
       res.data = res.data.replace(/\n#### /g, '\n##### ');
