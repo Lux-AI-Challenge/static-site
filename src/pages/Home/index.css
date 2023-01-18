@@ -75,7 +75,7 @@
   z-index: 3;
   position: absolute;
   top: calc(25vw - 6rem);
-  left: calc(15% - 12rem);
+  left: calc(15% - 10rem);
   /* left: 5%; */
   width: 48rem;
   text-align: center;
