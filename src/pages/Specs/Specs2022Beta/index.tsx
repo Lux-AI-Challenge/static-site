@@ -40,6 +40,10 @@ const getTimeDifferenceString = (now: Date, start: Date): string => {
   return `${hstr}:${mstr}:${sstr}`;
 };
 
+const getSlug = (text: string): string => {
+  return text.toLowerCase().replace(/[^a-z0-9 -]/gi, '').replace(/ /g, '-');
+};
+
 const Specs2022BetaPage = React.memo(() => {
   const [content, setContent] = useState('');
   const [h3s, setH3s] = useState<{ text: string; href: string; el: any }[]>([]);
@@ -84,7 +88,7 @@ const Specs2022BetaPage = React.memo(() => {
       const h3elems = document.getElementsByTagName('h3');
       const h3s: any[] = [];
       for (let i = 0; i < h3elems.length; i++) {
-        const href = h3elems[i].textContent;
+        const href = getSlug(h3elems[i].textContent!);
         h3elems[i].innerHTML += `<span class="anchor" id="${href}"></span>`;
         h3elems[i].className =
           'MuiTypography-root MuiTypography-h3 MuiTypography-colorTextPrimary';
@@ -111,7 +115,7 @@ const Specs2022BetaPage = React.memo(() => {
       );
       const h4elems = document.getElementsByTagName('h4');
       for (let i = 0; i < h4elems.length; i++) {
-        const href = h4elems[i].textContent;
+        const href = getSlug(h4elems[i].textContent!);
         h4elems[i].innerHTML += `<span class="anchor" id="${href}"></span>`;
         h4elems[i].className =
           'MuiTypography-root MuiTypography-h4 MuiTypography-colorTextPrimary';
