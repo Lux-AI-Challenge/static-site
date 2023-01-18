@@ -40,6 +40,13 @@ const getTimeDifferenceString = (now: Date, start: Date): string => {
   return `${hstr}:${mstr}:${sstr}`;
 };
 
+const getSlug = (text: string): string => {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/gi, '')
+    .replace(/ /g, '-');
+};
+
 const SpecsS2Page = React.memo(() => {
   const [content, setContent] = useState('');
   const [h3s, setH3s] = useState<{ text: string; href: string; el: any }[]>([]);
@@ -58,7 +65,8 @@ const SpecsS2Page = React.memo(() => {
 
   // countdown timer
   const [clock, setClock] = useState('');
-  const startDate = new Date('2023-01-26T18:00:00-0800');
+  // const [startDate] = useState(new Date('2023-01-26T18:00:00-0800'));
+  const [startDate] = useState(new Date('2023-01-18T00:00:00-0800'));
   useEffect(() => {
     const timer = setInterval(() => {
       setClock(getTimeDifferenceString(new Date(), startDate));
@@ -101,7 +109,7 @@ const SpecsS2Page = React.memo(() => {
         const h3elems = document.getElementsByTagName('h3');
         const h3s: any[] = [];
         for (let i = 0; i < h3elems.length; i++) {
-          const href = h3elems[i].textContent;
+          const href = getSlug(h3elems[i].textContent!);
           h3elems[i].innerHTML += `<span class="anchor" id="${href}"></span>`;
           h3elems[i].className =
             'MuiTypography-root MuiTypography-h3 MuiTypography-colorTextPrimary';
@@ -128,7 +136,7 @@ const SpecsS2Page = React.memo(() => {
         );
         const h4elems = document.getElementsByTagName('h4');
         for (let i = 0; i < h4elems.length; i++) {
-          const href = h4elems[i].textContent;
+          const href = getSlug(h4elems[i].textContent!);
           h4elems[i].innerHTML += `<span class="anchor" id="${href}"></span>`;
           h4elems[i].className =
             'MuiTypography-root MuiTypography-h4 MuiTypography-colorTextPrimary';
@@ -140,7 +148,7 @@ const SpecsS2Page = React.memo(() => {
         }
       });
     }
-  }, []);
+  }, [startDate]);
 
   function isInViewport(element: any) {
     const rect = element.getBoundingClientRect();
