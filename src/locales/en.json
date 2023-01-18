@@ -13,28 +13,29 @@
   "Home": {
     "Sign Up": "Sign Up",
     "Login": "Login",
-    "subtitle": "A novel approach to AI Programming Challenges. Beta competition is released!",
+    "subtitle": "A novel approach to AI Challenges and large-scale multi-agent RL benchmark. Season 2 competition with a $55k prize pool releases on January 24th, 10:30AM PST",
     "title": "Welcome To Lux.",
     "sec1": {
       "title": "What is the Lux AI Challenge?",
-      "body1": "Lux AI is one of the world's most popular AI programming game competitions. In Lux AI Season 1 we had 22,000+ submissions from 1,100+ different teams across 80+ countries competing on a global stage to build the strongest AI to play novel games.",
-      "body2": "In the challenge, teams are given the Lux design specification. Starting off with a very basic strategy, teams will improve and upload new submissions to the competition and compete directly against other competitors to climb the leaderboard.",
-      "body3": "Generally, the competition involves a multi-variable optimization and resource gathering and allocation problem in a 1v1 scenario against competitor bots. Successful submissions will not only involve solving this optimization, but also responding to the opposite team and coming out on top.",
+      "body1": "Lux AI is one of the world's most popular AI programming game competitions and a large-scale multi-agent RL benchmark. In <a href='https://www.kaggle.com/c/lux-ai-2021/'>Lux AI Season 1</a>, we had 22,000+ submissions from 1,100+ different teams across 80+ countries competing on a global stage to build the strongest AI to play novel games.",
+      "body2": "In the challenge, teams are given the Lux design specification. Starting off with a very basic strategy, teams will improve and upload new submissions to the competition and compete directly against other competitors to climb the leaderboard.      ",
+      "body3": "Generally, the competition involves a multi-variable optimization and resource gathering and allocation problem in a 1v1 scenario against competitor bots. Successful submissions will not only involve solving this optimization but also responding to the opposite team and coming out on top.      ",
       "body4": "You and your team will have to make improvements to unit navigation, resource gathering, macro and micro strategies and more to incrementally increase the power of your bot. Past competitors have used solutions from brute force search, heuristics, deep reinforcement learning, and imitation learning to compete!",
-      "body5": "We are focused on user-centered, inclusive, and engaging designs that work to bring wide ranging complexity but maintain accessibility for our competitors. We're dedicated to crafting competitions that require creativity and out-of-the-box thinking."
+      "body5": "We are focused on user-centered, inclusive, and engaging designs that work to bring wide-ranging complexity but maintain accessibility for our competitors. We're dedicated to crafting competitions that require creativity and out-of-the-box thinking. Moreover, our designs seek to benchmark reinforcement learning (RL) and multi-agent RL at scale. We aim to accelerate research into RL through complex novel environments, GPU-powered environments, and more."
     },
     "details": {
-      "title": "Competition Details",
+      "title": "Season 2 Competition Details",
+      "body0": "Season 2 will be a 1v1 multi-agent RL competition where both teams can control many units simultaneously to help win the game. There will be a $55,000 prize pool split amongst the top 8 teams. There will also be sprint awards given at the end of each month to the top 2 submissios which come with merch-based rewards. Finally there will also be some company based awards for specific solutions.",
       "title1": "Time",
-      "body1": "Lux AI Season 2 beta has been released! The Official competition be about one month after the beta",
+      "body1": "Lux AI Season 2 starts January 24th, 10:30AM PST. The kickoff event on our <a href='https://twitch.tv/luxaichallenge'>Twitch</a> starts at the same time. Code, rules, and competition release will be the end of kickoff",
       "title2": "Location",
-      "body2": "Virtual/Twitch/Youtube",
+      "body2": "Virtual/Twitch/Youtube. We live-stream events on  <a href='https://twitch.tv/luxaichallenge'>Twitch</a> and save them onto <a href='https://www.youtube.com/@luxai8031'>Youtube</a>",
       "title3": "Tournament Format",
       "body3": "We will run a ranked leaderboard. Your submission will compete against similarly ranked submissions to determine new rankings",
       "title4": "Team size",
       "body4": "1~5 people",
       "title5": "Programming Languages",
-      "body5": "Python, Typescript/Javascript, C++ will be officially supported. More are TBD. PRs are welcomed for other languages!",
+      "body5": "Python, Typescript/Javascript, C++ will be officially supported. More are TBD. <a href='https://github.com/Lux-AI-Challenge/Lux-Design-S2/pulls'>PRs</a> are welcomed for other languages!",
       "title6": "Eligibility",
       "body6": "Anyone is eligible to compete! As long as you submit code you will be considered a participant!"
     },
