@@ -92,7 +92,9 @@ const HomePage = () => {
         <main className="container">
           <section id="about">
             <Typography variant="h4">{t('sec1.title')}</Typography>
-            <Typography variant="body1">{t('sec1.body1')}</Typography>
+            <Typography variant="body1">
+              <div dangerouslySetInnerHTML={{ __html: t('sec1.body1') }}></div>
+            </Typography>
             <Typography variant="body1">{t('sec1.body2')}</Typography>
             <Typography variant="body1">{t('sec1.body3')}</Typography>
             <Typography variant="body1">{t('sec1.body4')} </Typography>
@@ -100,10 +102,23 @@ const HomePage = () => {
           </section>
           <section>
             <Typography variant="h4">{t('details.title')}</Typography>
+            <Typography variant="body1">
+              <div
+                dangerouslySetInnerHTML={{ __html: t('details.body0') }}
+              ></div>
+            </Typography>
             <Typography variant="h6">{t('details.title1')}</Typography>
-            <Typography variant="body1">{t('details.body1')}</Typography>
+            <Typography variant="body1">
+              <div
+                dangerouslySetInnerHTML={{ __html: t('details.body1') }}
+              ></div>
+            </Typography>
             <Typography variant="h6">{t('details.title2')}</Typography>
-            <Typography variant="body1">{t('details.body2')}</Typography>
+            <Typography variant="body1">
+              <div
+                dangerouslySetInnerHTML={{ __html: t('details.body2') }}
+              ></div>
+            </Typography>
             <Typography variant="h6">{t('details.title3')}</Typography>
             <Typography variant="body1">{t('details.body3')}</Typography>
             <div className="video-art-wrapper">
@@ -121,11 +136,23 @@ const HomePage = () => {
               - {t('details.disc')}
             </Typography> */}
             <Typography variant="h6">{t('details.title4')}</Typography>
-            <Typography variant="body1">{t('details.body4')}</Typography>
+            <Typography variant="body1">
+              <div
+                dangerouslySetInnerHTML={{ __html: t('details.body4') }}
+              ></div>
+            </Typography>
             <Typography variant="h6">{t('details.title5')}</Typography>
-            <Typography variant="body1">{t('details.body5')}</Typography>
+            <Typography variant="body1">
+              <div
+                dangerouslySetInnerHTML={{ __html: t('details.body5') }}
+              ></div>
+            </Typography>
             <Typography variant="h6">{t('details.title6')}</Typography>
-            <Typography variant="body1">{t('details.body6')}</Typography>
+            <Typography variant="body1">
+              <div
+                dangerouslySetInnerHTML={{ __html: t('details.body6') }}
+              ></div>
+            </Typography>
           </section>
           <br />
           <div className="video-art-wrapper">
