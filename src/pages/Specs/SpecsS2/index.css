@@ -8,7 +8,7 @@
   /* padding-bottom: calc(100vh - 4rem); */
 }
 .SpecsPage .container {
-  background-image: url('./stars.svg');
+  /* background-image: url('./stars.svg'); */
 }
 .SpecsPage .container .specs-grid {
   flex-grow: 1;

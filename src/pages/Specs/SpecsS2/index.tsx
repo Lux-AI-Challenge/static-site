@@ -66,7 +66,7 @@ const SpecsS2Page = React.memo(() => {
   // countdown timer
   const [clock, setClock] = useState('');
   // const [startDate] = useState(new Date('2023-01-26T18:00:00-0800'));
-  const [startDate] = useState(new Date('2023-01-18T00:00:00-0800'));
+  const [startDate] = useState(new Date('2023-01-24T19:30:00.000Z'));
   useEffect(() => {
     const timer = setInterval(() => {
       setClock(getTimeDifferenceString(new Date(), startDate));
