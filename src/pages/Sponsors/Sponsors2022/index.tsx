@@ -19,8 +19,11 @@ const Sponsor2022Page = () => {
     {
       name: 'Regression Games',
       tier: 'Bronze',
-      description:
-        'J Ventures is a leading early-stage venture capital firm dedicated to digital and intelligence technology investment. Built from the former Microsoft Ventures China team, we invest in AI core technology and mission critical applications in various industries, such as autonomous driving, smart manufacture, digital retail, smart logistics, digital healthcare, etc. With rich experiences in technology innovation and landing, J Ventures also works with 100 fortune 500 companies to define innovation trends, strategy and landing in various industries. Key members are technology and investment veterans with 15+ work experience at global leading technology companies such as Microsoft, Intel, GE, Huawei etc.',
+      description: `Experience the future of gaming with Regression Games, where AI and gaming collide! Regression Games is building an accessible and enjoyable experience for players to create game AIs, code characters, train models, and compete in their favorite games. Join our community, battle for top spots, earn achievements, and collaborate with friends to earn prizes and ultimate glory!
+        <br/>
+        We invite you to playtest the Regression Games platform here: https://play.regression.gg/
+        <br/>
+        Finally, check out our job postings for software engineers - work alongside a team of senior engineers with experience from Riot Games, IBM, and more! https://regression.gg/careers`,
       logo: RegressionGamesLogo,
       links: '',
       link: 'http://regression.gg',
