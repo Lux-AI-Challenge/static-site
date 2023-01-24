@@ -166,7 +166,6 @@ const SpecsS2Page = React.memo(() => {
     <DefaultLayout>
       <div className={`${classes.page} SpecsPage`}>
         <Typography variant="h2"></Typography>
-        <div dangerouslySetInnerHTML={{ __html: content }}></div>
         {new Date().getTime() < startDate.getTime() ? (
           <div className="countdown">{clock}</div>
         ) : (
