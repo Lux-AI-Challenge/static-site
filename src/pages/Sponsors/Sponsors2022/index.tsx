@@ -12,7 +12,7 @@ const Sponsor2022Page = () => {
       tier: 'Gold',
       description:
         'QuantCo is a fast-growing tech company founded by four Harvard and Stanford graduates. Our global team of quantitative researchers and developers leverages expertise in machine learning, software engineering, and econometrics to develop solutions for algorithmic pricing, high-dimensional forecasting, and data-driven claims management. Our corporate partners are some of the largest insurance, e-commerce, and healthcare organizations in the world.',
-      links: ``,
+      links: `Interested in joining? Email join@quantco.com to find out more`,
       logo: QuantCo,
       link: 'https://quantco.com',
     },
