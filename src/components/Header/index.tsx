@@ -23,21 +23,20 @@ const Header = ({ day }: { day?: boolean } = { day: false }) => {
       link: '/specs-s2',
       external: false,
     },
-    // uncomment when released
-    // {
-    //   name: 'Compete',
-    //   link: 'https://kaggle.com/c/lux-ai-season-2/',
-    //   external: true,
-    // },
+    {
+      name: 'Compete',
+      link: 'https://kaggle.com/c/lux-ai-season-2/',
+      external: true,
+    },
     {
       name: 'Sponsors',
       link: '/sponsors-s2',
     },
-    // {
-    //   name: 'Forums',
-    //   link: 'https://kaggle.com/c/lux-ai-season-2/discussion',
-    //   external: true,
-    // },
+    {
+      name: 'Forums',
+      link: 'https://kaggle.com/c/lux-ai-season-2/discussion',
+      external: true,
+    },
   ];
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
